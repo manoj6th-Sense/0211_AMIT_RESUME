@@ -1,22 +1,20 @@
 # Résumé project: what a helper may see.
-# Allow-list: everything at the root is ignored, then only the lines with "!" come back.
-# A new folder stays private until someone adds a "!" line for it here.
-# Check before the first commit: sh 005_SCRIPTS/002_preview_share.sh
-
 /*
 
 # --- shared: these folders and files, nothing else ---
 !/.gitignore
 !/README.md
 !/PROJECT_INDEX.md
-!/000_GITHUB_BACKUP/
+!/_ARCHIVE/
 !/000_PROJECT_HISTORY/
-!/001_FINAL_RESUMES/
-!/002_STRATEGIC_PITCH/
-!/003_INTERVIEW_PREP/
-!/004_DATA_REFERENCES/
-!/005_SCRIPTS/
-!/006_TESTS/
+!/001_HISTORICAL_BACKGROUND_AND_OLD_CV/
+!/002_AI_PROJECTS_EVIDENCE_2024_2026/
+!/003_STRATEGIC_POSITIONING_AND_PITCH/
+!/004_INTERVIEW_PREP_AND_GAP_STRATEGY/
+!/005_RESUME_PRE_WORK_AND_DRAFTS/
+!/006_LINKEDIN_PROFILE/
+!/007_FINAL_RESUMES/
+!/008_SCRIPTS_AND_TESTS/
 
 # --- never shared, even inside a shared folder ---
 *_v[0-9]*.[0-9]*.[0-9]*_[0-9][0-9]-[0-9][0-9]-[0-9][0-9]__*

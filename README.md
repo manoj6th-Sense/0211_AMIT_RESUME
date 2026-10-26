@@ -5,49 +5,41 @@
 
 ---
 
-## 📂 Folder Structure
+## 📂 Pipeline & Folder Structure
 
 ```
 0211_AMIT_RESUME/
-├── 000_GITHUB_BACKUP/                         ← Pristine snapshot archive
-├── 000_PROJECT_HISTORY/                       ← Mandatory Project History & Audit trails
-│   ├── 001_IMPLEMENTATION_PLANS/
-│   ├── 002_WALKTHROUGHS/
-│   ├── 003_TASKS_AND_CHECKPOINTS/
-│   ├── 004_SESSIONS/
-│   └── 005_RECAPS_AND_AUDITS/
-├── 001_FINAL_RESUMES/                         ← Ready to send outward collateral
-│   ├── 001_AMIT_MALHOTRA_FDE_PROFILE_2026.md  ← ⭐ MASTER client/profile document (detailed)
-│   ├── 002_AMIT_MALHOTRA_FDE_RESUME_2026_ATS.md ← ATS-optimized resume
-│   ├── 003_APPLICATION_KIT_2026.md           ← Pitch, cover letters, STAR stories
-│   ├── 004_LINKEDIN_PROFILE.md                ← Validated LinkedIn copy
-│   ├── 005_RESUME_BUSINESS_ANALYST_PM.md      ← BA / PM resume
-│   ├── 006_RESUME_COMPLETE_TECHNO_FUNCTIONAL.md ← Full techno-functional resume
-│   └── 007_EXPORTS/                           ← Compiled PDF / DOCX / HTML outputs
-├── 002_STRATEGIC_PITCH/                       ← Executive pitches & value narratives
-├── 003_INTERVIEW_PREP/                        ← Tactical interview prep & gap strategies
-├── 004_DATA_REFERENCES/                       ← Source materials & 24-project technical audits
-├── 005_SCRIPTS/                               ← Export automation & validation scripts
-├── 006_TESTS/                                 ← 7-point QA verification & secret prevention
-├── PROJECT_INDEX.md                           ← Complete file catalog & navigation guide
-└── README.md                                  ← This file
+├── 001_HISTORICAL_BACKGROUND_AND_OLD_CV/       ← STEP 1: Original legacy resumes (Word & PDF)
+├── 002_AI_PROJECTS_EVIDENCE_2024_2026/         ← STEP 2: The 24 AI projects built in past 2 years
+├── 003_STRATEGIC_POSITIONING_AND_PITCH/        ← STEP 3: Strategic pitch decks & value propositions
+├── 004_INTERVIEW_PREP_AND_GAP_STRATEGY/        ← STEP 4: STAR stories, Q&A, and interview cheat sheets
+├── 005_RESUME_PRE_WORK_AND_DRAFTS/             ← STEP 5: Working resume drafts (to be reworked)
+│   └── 006_DRAFT_EXPORTS/                      ← Compiled draft exports (PDF, DOCX, HTML)
+├── 006_LINKEDIN_PROFILE/                       ← STEP 6: Dedicated LinkedIn optimization workspace
+├── 007_FINAL_RESUMES/                          ← STEP 7: Final approved resumes & exports (post-rework)
+│   └── 001_APPROVED_EXPORTS/
+├── 008_SCRIPTS_AND_TESTS/                      ← Export compiler & 7-point QA test harness
+├── _ARCHIVE/                                   ← Pristine original GitHub clone snapshot
+├── 000_PROJECT_HISTORY/                        ← Mandatory audit plans & logs
+├── PROJECT_INDEX.md                            ← Complete catalog & clickable navigation index
+└── README.md                                   ← This file
 ```
 
 ---
 
 ## 🎯 Which Document to Use
 
-| Situation | File |
-|-----------|------|
-| **Client outreach / 1099 / detailed profile** | [001_AMIT_MALHOTRA_FDE_PROFILE_2026.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/001_FINAL_RESUMES/001_AMIT_MALHOTRA_FDE_PROFILE_2026.md) |
-| **ATS Job Applications** | [002_AMIT_MALHOTRA_FDE_RESUME_2026_ATS.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/001_FINAL_RESUMES/002_AMIT_MALHOTRA_FDE_RESUME_2026_ATS.md) |
-| **AI / FDE / platform engineering roles** | [006_RESUME_COMPLETE_TECHNO_FUNCTIONAL.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/001_FINAL_RESUMES/006_RESUME_COMPLETE_TECHNO_FUNCTIONAL.md) |
-| **BA / PM roles** | [005_RESUME_BUSINESS_ANALYST_PM.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/001_FINAL_RESUMES/005_RESUME_BUSINESS_ANALYST_PM.md) |
-| **LinkedIn / Upwork** | [004_LINKEDIN_PROFILE.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/001_FINAL_RESUMES/004_LINKEDIN_PROFILE.md) |
-| **Cover Letters & Pitch Stories** | [003_APPLICATION_KIT_2026.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/001_FINAL_RESUMES/003_APPLICATION_KIT_2026.md) |
-| **Interview day** | [005_QUICK_REFERENCE_CARD.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/003_INTERVIEW_PREP/005_QUICK_REFERENCE_CARD.md) |
-| **Interview practice** | [003_INTERVIEW_QUESTIONS.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/003_INTERVIEW_PREP/003_INTERVIEW_QUESTIONS.md) |
-| **Deep project facts** | [004_PROJECT_EXPERTISE_ANALYSIS_2026-10-25.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/004_DATA_REFERENCES/004_PROJECT_EXPERTISE_ANALYSIS_2026-10-25.md) |
+| Purpose / Workflow Stage | Working File Link |
+|---|---|
+| **Original Legacy Career CV** | [001_AMIT_MALHOTRA_AA.docx](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/001_HISTORICAL_BACKGROUND_AND_OLD_CV/001_AMIT_MALHOTRA_AA.docx) |
+| **Deep AI Project Evidence (24 Projects)** | [007_PROJECT_EXPERTISE_ANALYSIS_2026-10-25.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/002_AI_PROJECTS_EVIDENCE_2024_2026/007_PROJECT_EXPERTISE_ANALYSIS_2026-10-25.md) |
+| **Strategic Pitch Deck & Positioning** | [003_VALUE_PROPOSITION_PITCH_DECK.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/003_STRATEGIC_POSITIONING_AND_PITCH/003_VALUE_PROPOSITION_PITCH_DECK.md) |
+| **Interview Day Cheat Sheet & Soundbites** | [005_QUICK_REFERENCE_CARD.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/004_INTERVIEW_PREP_AND_GAP_STRATEGY/005_QUICK_REFERENCE_CARD.md) |
+| **Interview Questions & STAR Answers** | [004_INTERVIEW_QUESTIONS.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/004_INTERVIEW_PREP_AND_GAP_STRATEGY/004_INTERVIEW_QUESTIONS.md) |
+| **Current ATS Resume Draft (Pre-Work)** | [002_AMIT_MALHOTRA_FDE_RESUME_ATS_DRAFT.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/005_RESUME_PRE_WORK_AND_DRAFTS/002_AMIT_MALHOTRA_FDE_RESUME_ATS_DRAFT.md) |
+| **Current Techno-Functional Resume Draft** | [005_RESUME_COMPLETE_TECHNO_FUNCTIONAL_DRAFT.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/005_RESUME_PRE_WORK_AND_DRAFTS/005_RESUME_COMPLETE_TECHNO_FUNCTIONAL_DRAFT.md) |
+| **LinkedIn Profile Workspace** | [001_LINKEDIN_PROFILE_WORKING_DRAFT.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/006_LINKEDIN_PROFILE/001_LINKEDIN_PROFILE_WORKING_DRAFT.md) |
+| **Final Resumes Staging Guide** | [000_FINAL_RESUMES_STAGING_GUIDE.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/007_FINAL_RESUMES/000_FINAL_RESUMES_STAGING_GUIDE.md) |
 
 ---
 
@@ -93,7 +85,7 @@
 
 ## 🛠 Maintenance Notes
 
-- **Source of truth for project facts:** `004_DATA_REFERENCES/004_PROJECT_EXPERTISE_ANALYSIS_2026-10-25.md`. Update it first, then the profile, then the resumes.
+- **Source of truth for project facts:** `002_AI_PROJECTS_EVIDENCE_2024_2026/007_PROJECT_EXPERTISE_ANALYSIS_2026-10-25.md`. Update it first, then the profile, then the resumes.
 - **Excluded from all documents:** projects named TEST / DEMO / outputs / spoofing / boilerplate / crawler, n8n, and pre-2023 bots.
 - **Naming:** use "AMTrix Plan" (not AMX) in all outward-facing documents.
 - **Claims to measure before citing:** the gateway cost-reduction percentage (from `proxy.db`), AMTrix Plan test counts.
