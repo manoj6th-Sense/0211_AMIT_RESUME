@@ -1,0 +1,30 @@
+# Phrases that must not appear in the outward files (FINAL_RESUMES/, INTERVIEW_PREP/).
+# One extended regex per line, matched case-insensitively by tests/check_outward.sh.
+# A line that states the rule itself (not "…", say "…", do not claim …) is excepted.
+# The honest alternative follows each pattern as a comment. Source: FINAL_RESUMES/APPLICATION_KIT_2026.md, the phrasing rules.
+
+# "AMTrix Plan", never shortened
+AMX Plan
+\bAMX\b
+
+# the human never used n8n; say "custom Python and shell pipelines"
+n8n
+
+# say "modular instruction design" or "LLM instruction sets"
+prompt engineer
+
+# say "browser-session automation for reliable availability data"
+bypass(es|ing)? bot
+
+# say "hook-enforced guardrails"
+\bsandbox
+
+# the ntfy bus is one instance; failover lives in the client
+high.availability
+
+# say "used live with Claude Code; adapters for Codex and Antigravity"
+all three agents
+
+# the human's rule: no repository is ever made public; never propose it in an outward file
+(make|made|making) [a-z0-9 ]{0,30}(repos?|repositor(y|ies)) public
+(repos?|repositor(y|ies)) (go|goes|went) public

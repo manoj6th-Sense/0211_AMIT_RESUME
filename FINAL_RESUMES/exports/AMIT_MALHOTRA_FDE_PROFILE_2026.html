@@ -1,0 +1,636 @@
+<!doctype html><html><head><meta charset='utf-8'><style>
+@page { size: Letter; margin: 0.55in 0.6in; }
+body { font-family: Calibri, 'Helvetica Neue', Arial, sans-serif; font-size: 10.2pt; line-height: 1.28; color: #111; }
+h1 { font-size: 20pt; margin: 0 0 2pt 0; letter-spacing: 0.5px; }
+h2 { font-size: 11.5pt; margin: 9pt 0 3pt 0; border-bottom: 1.2px solid #333; padding-bottom: 1pt; text-transform: uppercase; letter-spacing: 0.4px; }
+h3 { font-size: 10.8pt; margin: 7pt 0 2pt 0; }
+p { margin: 2pt 0 4pt 0; }
+ul { margin: 1pt 0 3pt 0; padding-left: 15pt; }
+li { margin: 0 0 2.2pt 0; }
+table { border-collapse: collapse; width: 100%; font-size: 9.2pt; margin: 4pt 0; }
+th, td { border: 1px solid #999; padding: 2pt 4pt; vertical-align: top; text-align: left; }
+th { background: #eee; }
+code { font-family: Menlo, monospace; font-size: 9pt; }
+blockquote { margin: 3pt 0 3pt 10pt; color: #333; }
+</style></head><body><h1>AMIT MALHOTRA</h1>
+<h3>Forward Deployed AI Engineer · Agent Reliability · LLM Gateways · Private AI · Context Engineering</h3>
+<p>Hicksville, NY · amit.malhotra1@gmail.com · (917) 345-7516 · github.com/amit-malhotra1
+Available for full-time, contract and 1099 engagements.</p>
+<hr />
+<h2>Profile</h2>
+<p>I build the infrastructure that makes AI agents dependable in real work. I bring <strong>21 years of enterprise data and risk technology</strong>, including Moody's Analytics and Basel/CCAR platforms for major banks, and, since 2025, full-time hands-on engineering on LLM-agent systems (20+ shipped tools and platforms). Over that time I moved past early LLM experimentation to the problems underneath it:</p>
+<ul>
+<li><strong>Vendor-independent model access.</strong> I built my own LLM gateway that runs the Claude Code agent against models on Google Vertex AI, AWS Bedrock, OpenRouter or local hardware. It needs no Claude subscription and keeps prompt caching and tool calling working.</li>
+<li><strong>Private AI on my own hardware.</strong> Ollama and Open WebUI on a 64 GB Apple Silicon workstation, running 30B-class models with long context windows, and my own chat assistant that combines local models with cloud APIs.</li>
+<li><strong>Agents that can be trusted.</strong> I built a drop-in governance standard that makes any AI coding agent resume where it stopped, back up before it edits, stay in scope and prove its work with measured tests.</li>
+<li><strong>Context as an engineered pipeline.</strong> Capture → compress → compile → route → cache → verify, built and rebuilt over a year of iterations.</li>
+<li><strong>Deterministic computation with LLM interpretation.</strong> Math and rules produce the answer; the model only explains it.</li>
+</ul>
+<p>I like taking a complex process, understanding it thoroughly, breaking it into small pieces and rebuilding it so it is simple to use. Everything I build is <strong>lightweight, portable and plug-and-play</strong>, designed from the start to connect with the other tools I've built.</p>
+<p>I work the way a forward-deployed engineer does. I go into a team's real workflow, find where the AI fails (hallucinated "done", lost work, runaway cost, context collapse, vendor lock-in), and ship the harness that fixes it.</p>
+<hr />
+<h2>What I Deliver</h2>
+<table>
+<thead>
+<tr>
+<th>Engagement</th>
+<th>What I build</th>
+<th>Typical outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI coding-agent rollout &amp; governance</strong></td>
+<td>Hooks, plan-before-edit workflow, automatic backups, scope guards, append-only audit records, measured-evidence reporting for Claude Code / Codex / Gemini</td>
+<td>Agents that resume, can't silently destroy work, and leave an audit trail a reviewer or regulator can read</td>
+</tr>
+<tr>
+<td><strong>LLM gateway &amp; cost control</strong></td>
+<td>Local or self-hosted proxy: provider routing, schema translation, prompt-cache injection, per-request cost telemetry, failover</td>
+<td>Lower token spend, no single-vendor lock-in, freedom to choose the model per task</td>
+</tr>
+<tr>
+<td><strong>Private / on-prem AI</strong></td>
+<td>Local model hosting (Ollama), a self-hosted chat front end (Open WebUI), private web search, multi-machine setups, hardware and model sizing</td>
+<td>AI capability for data that can't leave the building, at near-zero marginal cost</td>
+</tr>
+<tr>
+<td><strong>Custom MCP servers</strong></td>
+<td>Tool servers that connect agents to code, documents and internal systems, with pass-by-path loading, anti-truncation and drill-down storage</td>
+<td>Agents get deep analysis without context bloat or truncated answers</td>
+</tr>
+<tr>
+<td><strong>Deterministic AI pipelines</strong></td>
+<td>"Compute, then narrate" engines: calculations, scoring and validation in code; the LLM gets schema-validated evidence</td>
+<td>Reproducible results for regulated or high-stakes domains</td>
+</tr>
+<tr>
+<td><strong>Vision / computer-use agents</strong></td>
+<td>VLM perception → deterministic policy table → verified action, with session token budgeting</td>
+<td>Automation of screens and legacy apps that have no API</td>
+</tr>
+<tr>
+<td><strong>Integration &amp; simplification</strong></td>
+<td>Breaking a tangled workflow into small, reusable modules that plug into each other</td>
+<td>One clean system in place of many disconnected tools and scripts</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>How I Think and Work</h2>
+<h3>Understand deeply, then simplify</h3>
+<p>When a problem is worth solving and the reasoning behind it is strong, I get into the details. I map the whole process, find where it really breaks, then <strong>break it into small, testable pieces</strong> and rebuild it so it is easier to use. The goal is always the same: the complexity sits inside the system, and the person using it gets a simple surface: one command, one menu, one health check.</p>
+<h3>Lego architecture: flexible, lightweight, portable, plug-and-play</h3>
+<p>Every tool is built as a <strong>self-contained module</strong>: one folder or one file, few or no dependencies, its own README, an installer or deploy script. That way it can be dropped into another project and combined with other modules. While building any single tool, I am already thinking about how it will <strong>connect and stay in sync</strong> with the rest of the ecosystem (see <em>The Connected Ecosystem</em> below).</p>
+<ul>
+<li><strong>Skills as building blocks.</strong> Large instruction sets are broken into atomic skills. A complex skill is split into numbered packets that a master skill unpacks in sequence.</li>
+<li><strong>Composed workflows.</strong> Named workflows are assembled from atomic skills; for example <em>safe build</em> = core rules + guard + feature + test + diff, and <em>safe cleanup</em> = audit + guard + refactor + docs.</li>
+<li><strong>Swappable components.</strong> Strategy "cartridges" (in the vision agent and the skill viewer) can be exchanged without touching the engine.</li>
+<li><strong>Skill discovery by code.</strong> The AMTrix Plan standard reads a project's real commands (package scripts, Makefile targets, docker compose) and suggests the skills that project should have.</li>
+</ul>
+<h3>Visual-first learning</h3>
+<p>I learn fast by making systems visible, and I keep that knowledge by documenting it visually:</p>
+<ul>
+<li><strong>Mermaid architecture and sequence diagrams</strong> in nearly every repository.</li>
+<li><strong>A diagram generator I built</strong>, which renders Mermaid dashboards from structured text (SVG output, tables embedded in diagram nodes, 15+ iterations).</li>
+<li><strong>Generated diagram pages</strong> in the AMTrix Plan board.</li>
+<li><strong>Consistent icon and color status markers</strong> in documentation and terminal dashboards, so a page or a HUD can be read in seconds.</li>
+</ul>
+<p>Seeing a system is how I understand it, and it is how I make it understandable to teams and clients.</p>
+<h3>Engineering principles</h3>
+<ol>
+<li><strong>Determinism over cleverness.</strong> Priority lookup tables instead of free-form reasoning. Byte-exact, hashed request payloads. Every response classified as complete, partial, failed or unknown.</li>
+<li><strong>Nothing is ever lost.</strong> Backup before the first edit, versioned sibling files instead of overwrites, append-only locked logs, anti-truncation gates.</li>
+<li><strong>Measured, not claimed.</strong> Test counts and timings are recorded by code, never typed by a model.</li>
+<li><strong>Context is a budget.</strong> Pass-by-path loading, compiled context handoffs, redundancy compression, cache TTL management, per-screenshot token accounting.</li>
+<li><strong>Model-agnostic.</strong> Claude, Gemini, GPT, Kimi K2, DeepSeek, Grok, Llama and Qwen: the right model per task, behind one interface.</li>
+<li><strong>Operator-first.</strong> The system carries the memory, the checking and the routine, so the human doesn't have to.</li>
+</ol>
+<hr />
+<h2>The Connected Ecosystem</h2>
+<p>The projects below are not isolated experiments. They are modules that feed and govern each other.</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Module</th>
+<th>Feeds or governs</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model access</td>
+<td><strong>Claude Code Center</strong> (LLM gateway)</td>
+<td>Private AI Platform</td>
+<td>Routes its $0 local tier to the Ollama models</td>
+</tr>
+<tr>
+<td>Model access</td>
+<td><strong>Private AI Platform</strong> (Ollama + Open WebUI)</td>
+<td>AMTrix Studio, AI Companion, the gateway</td>
+<td>One local model tier shared by every tool</td>
+</tr>
+<tr>
+<td>Governance</td>
+<td><strong>AMTrix Plan</strong> standard</td>
+<td>Frontier Triage Engine</td>
+<td>The engine was born inside the standard and spun out</td>
+</tr>
+<tr>
+<td>Governance</td>
+<td><strong>AMTrix Plan</strong> standard</td>
+<td>AMTrix Core, Availability Platform, this portfolio</td>
+<td>Installed governance record in each; one command updates all</td>
+</tr>
+<tr>
+<td>Governance</td>
+<td><strong>Frontier Triage Engine</strong></td>
+<td>Universal MCP Server</td>
+<td>Embedded for hashed, audited model calls</td>
+</tr>
+<tr>
+<td>Governance</td>
+<td><strong>Patch TUI</strong></td>
+<td>Claude Code Center</td>
+<td>Shipped a multi-file gateway release as fingerprinted patches</td>
+</tr>
+<tr>
+<td>Context</td>
+<td><strong>Agent Protocol / AI Protocol Template</strong></td>
+<td>Every active project</td>
+<td>On-disk memory and rules installed and synchronised by a fleet updater</td>
+</tr>
+<tr>
+<td>Context</td>
+<td><strong>AMTrix Core</strong> (skills + compilers)</td>
+<td>Claude Code Center, Vision agent, Mac/iPhone</td>
+<td>QA skill drives the gateway's diagnostics script; skills compile to editor snippets and text replacements</td>
+</tr>
+<tr>
+<td>Context</td>
+<td><strong>Context Compressor</strong></td>
+<td>Agent Protocol</td>
+<td>Bundled inside the protocol</td>
+</tr>
+<tr>
+<td>Signal</td>
+<td><strong>VoiceBus + Notify-Bus</strong></td>
+<td>Availability Platform, long-running agents</td>
+<td>Alerts and agent milestones over one self-hosted push contract</td>
+</tr>
+<tr>
+<td>Applications</td>
+<td><strong>Availability Platform</strong>, <strong>Vision Decision Agent</strong>, <strong>Ephemeris Engine</strong></td>
+<td>(consumers)</td>
+<td>Run under the governance, context and signal layers above</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Shared module</th>
+<th>Where it is reused</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI Protocol Template</strong> (agent rules + on-disk memory)</td>
+<td>Installed in every active project, including the AI Companion Toolkit, Private AI Platform, AMTrix Studio and the Availability Platform</td>
+</tr>
+<tr>
+<td><strong>AMTrix Plan standard</strong></td>
+<td>AMTrix Core, the Availability Platform and other projects; one command updates every installed project</td>
+</tr>
+<tr>
+<td><strong>Frontier Triage Engine</strong></td>
+<td>Born inside AMTrix Plan, spun out as a standalone engine, then embedded in the Universal MCP Server</td>
+</tr>
+<tr>
+<td><strong>Context Compressor</strong></td>
+<td>Standalone tool, also bundled inside the Agent Protocol</td>
+</tr>
+<tr>
+<td><strong>Local model tier</strong> (Ollama)</td>
+<td>Open WebUI chat assistant, Claude Code Center's $0 route, AMTrix Studio, AI Companion Toolkit</td>
+</tr>
+<tr>
+<td><strong>Signal Layer</strong></td>
+<td>Product alerts (Availability Platform) and agent completion/approval notifications</td>
+</tr>
+<tr>
+<td><strong>Identity Engine</strong> design tokens</td>
+<td>A shared visual language across dashboards and web cockpits</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>The Context-Engineering Journey (Sep 2025 → Oct 2026)</h2>
+<p>I didn't take one approach to context engineering. I built seven, measured where each one broke, and kept what survived.</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>What I built</th>
+<th>What it taught me</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 · Modular instruction design</strong> (Sep–Oct 2025)</td>
+<td><strong>PromptForge</strong>: an IDE that treats LLM instruction sets like code (components, includes, conditional assembly, version control)</td>
+<td>Structure helps, but it doesn't fix forgetting, drift or hallucination</td>
+</tr>
+<tr>
+<td><strong>2 · Persistent memory on disk</strong> (Nov–Dec 2025)</td>
+<td><strong>Agent Protocol <code>.ai</code> system</strong>: immutable core rules, a living vault (context, session log, friction log), cross-project wisdom and friction indexes, and one-command propagation to every project</td>
+<td>Memory must live <strong>on disk</strong> and be <strong>versioned</strong>; the model can't be trusted to hold it</td>
+</tr>
+<tr>
+<td><strong>3 · Compression</strong> (Jan 2026)</td>
+<td><strong>AI Context Compressor</strong> (Python + Rust): near-duplicate collapse, boilerplate stripping, n-gram shortcode dictionary</td>
+<td>Removing redundancy keeps intent intact; summarizing loses it</td>
+</tr>
+<tr>
+<td><strong>4 · Routing &amp; traffic inspection</strong> (Dec 2025–Mar 2026)</td>
+<td><strong>Agent Protocol <code>.agent</code> v17 → v19.5</strong>: a 1,000+-line multi-provider context router, model alias registry, a payload-capture vault that records what AI tools actually send over the wire, a hardened test suite</td>
+<td>What a tool <strong>sends</strong> matters more than what it <strong>says</strong> it sends. Control of context belongs at the request layer</td>
+</tr>
+<tr>
+<td><strong>5 · Skills &amp; compiled context</strong> (Feb–May 2026)</td>
+<td><strong>AMTrix Core</strong>: atomic skills, composed workflows, and a Context Compiler that merges spec, task and friction files into one handoff file for any fresh model</td>
+<td>Small, composable pieces beat one long instruction set</td>
+</tr>
+<tr>
+<td><strong>6 · Own the gateway</strong> (Mar–Oct 2026)</td>
+<td><strong>Claude Code Center</strong>: my own proxy in front of the agent, with routing, caching, translation and cost telemetry</td>
+<td><strong>The best result:</strong> owning the proxy gives full control of context, cost and model choice, without monthly subscriptions</td>
+</tr>
+<tr>
+<td><strong>7 · Govern the process</strong> (Oct 2026)</td>
+<td><strong>AMTrix Plan standard</strong> + <strong>Frontier Triage Engine</strong></td>
+<td>Reliability comes from process enforced by code (hooks, backups, evidence), not from better wording</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Flagship Work</h2>
+<h3>1 · Claude Code Center: Vendor-Independent LLM Gateway for Agentic Coding</h3>
+<p><em>Node.js · Express · SQLite · Google Vertex AI · AWS Bedrock · OpenRouter · Ollama · Bash TUI · 97 commits (Mar–Oct 2026)</em></p>
+<p><strong>Problem.</strong> The Claude Code agent is one of the strongest coding agents available, but it is tied to Anthropic's own subscription or API. Teams that want to run it on credits in their own cloud account, on other frontier models, or on local models had no off-the-shelf path. Cost per session was also hard to see.</p>
+<p><strong>What I built.</strong> A local gateway that sits between the Claude Code CLI and every model provider. It handles translation, routing, caching and metering, while the agent keeps working as designed.</p>
+<p><strong>Engineering highlights</strong>
+- <strong>Google Vertex AI integration.</strong> The gateway runs the Claude Code harness against models on Vertex AI using the client's own GCP project and pay-per-token billing:
+  - Claude on Vertex through the native <code>rawPredict</code> path, with 1-hour prompt caching verified to match the direct API.
+  - Gemini through native Vertex endpoints.
+  - <strong>Third-party Vertex Model-as-a-Service models (Kimi K2, DeepSeek)</strong>: the gateway handles regional OAuth2 and payload translation that the CLI's built-in Anthropic client can't do.
+  - Service-account OAuth2 with token caching, and a model registry that maps friendly names to Vertex model IDs and endpoints.
+  - <strong>When I built it, this was not available in off-the-shelf tooling.</strong> Claude Code supports Claude on Vertex natively; my gateway extends it to Vertex's other model families.
+- <strong>Tool calling on non-Anthropic models.</strong> A streaming (SSE) accumulator merges fragmented <code>functionCall</code> fields and reasoning signatures into clean tool blocks. Claude Code's tool loop therefore runs on Gemini and other models; tool support is flagged per model in the registry.
+- <strong>Cost engineering:</strong>
+  - Prompt-cache injection with a 1-hour TTL.
+  - Vertex explicit context caching (<code>cachedContents</code>) that splits stable from volatile context, for contexts of 32 KB and up.
+  - A SQLite exact-match response cache, and warm-bundle session continuity.
+  - Fixing a context-ignore problem removed a ~23K-token directory sweep from simple first prompts.
+- <strong>OpenRouter BYOK routing.</strong> Provider-order pinning (<code>google-vertex</code>, <code>amazon-bedrock</code>) so requests bill against the client's own cloud accounts.
+- <strong>10-tier model router</strong> spanning Anthropic, OpenAI, Google, Moonshot, DeepSeek and a <strong>$0 local tier</strong> (Llama, Qwen Coder, LLaVA vision via Ollama).
+- <strong>Observability.</strong> A multi-terminal HUD with per-request token, cache and cost telemetry, color-coded by billing relationship. Work profiles (Quick Fix / Deep Work / Clean Slate) switch the routing strategy in one keystroke.</p>
+<p><strong>Why it matters for you.</strong> It gives AI-gateway capability (routing, caching, budgets, failover, vendor freedom) to any team that runs coding agents at scale, on infrastructure and billing they already own.</p>
+<hr />
+<h3>2 · AMTrix Plan: Drop-In Governance Standard for AI Coding Agents</h3>
+<p><em>Python (stdlib, ~23K lines, 700+ automated tests) · Claude Code hooks (adapters for Codex and Antigravity) · git hooks · 365 commits (Oct 2026) · deployed to three of my projects</em></p>
+<p><strong>Problem.</strong> AI coding agents forget between sessions, overwrite work, drift outside scope and report "done" without evidence.</p>
+<p><strong>What I built.</strong> One folder you drop into any repository. From then on, every AI model working there follows the same audited loop: <strong>resume → plan → human approval → backup → edit → measured test → append-only record → handoff.</strong></p>
+<p><strong>Engineering highlights</strong>
+- <strong>All seven Claude Code hook events wired</strong> (SessionStart, UserPromptSubmit, PreToolUse, PostToolUse, Stop, PermissionRequest, plus the stamp on every edit). Every session opens with a "where we are" block, every file is backed up before its first edit, edits to recorded history are blocked, and the hooks never block the reply. The PermissionRequest handler auto-approves only the loop's own calls under a time-boxed standing approval given in the human's words. Used live with Claude Code; adapters exist for Codex and Antigravity.
+- <strong>A rules ledger</strong> maps about 190 written obligations to the code that enforces each one (a verb, a hook, a script, or "the worker"), audited on every refresh; a one-command cross-project health check prints one pass/fail per feature per installed project.
+- <strong>A portable human-in-the-loop standard</strong> (14 principles with do/don't/check, backup and record standards, an anti-pattern table) that a client team can adopt without the code.
+- <strong>Versioned plan records.</strong> The plans themselves live in versioned folders that lock once closed. A plan the human has already seen can only change through a recorded revision.
+- <strong>Evidence written by code.</strong> Test counts and timings are written by the <code>finish</code> step, never typed by the model.
+- <strong>Generated project intelligence:</strong> code map, file index, test-coverage map, diagrams, dashboards, catch-up reports and suggested project skills.
+- <strong>Scheduled reviews</strong> by a reviewer model. Each finding is marked <em>measured by code</em> or <em>reviewer judgement</em>.
+- <strong>Safety gates.</strong> A pre-commit secret scanner, and a hard rule: no push, install, deploy, delete, spend or model change without explicit human approval.
+- <strong>Self-distribution.</strong> One command updates every installed project and commits the update there.</p>
+<p><strong>Why it matters for you.</strong> It is a working reference implementation of an <strong>agent SDLC</strong>, with the auditability, reproducibility and rollback that change management, SOC 2 and AI-governance programs require.</p>
+<hr />
+<h3>3 · Private AI Platform: Local LLMs on Apple Silicon with Open WebUI</h3>
+<p><em>Ollama · Open WebUI · SearxNG · Docker Compose · Tailscale · Bash · Python · 64 GB Apple Silicon (M1 Max) workstation</em></p>
+<p><strong>Problem.</strong> Many teams can't send sensitive data to cloud LLMs, and per-token cost adds up for everyday work. Running capable models locally, reliably and with a usable interface takes real systems work.</p>
+<p><strong>What I built.</strong> A private AI platform on my own hardware: local model hosting plus my own chat assistant, with cloud APIs available alongside the local models when needed.</p>
+<p><strong>Engineering highlights</strong>
+- <strong>Large models on a 64 GB unified-memory workstation:</strong>
+  - 30B-parameter mixture-of-experts models (Qwen3-Coder-30B-A3B, Qwen3-30B-A3B "Thinking") run as quantized GGUF builds (Q5_K_M / Q6_K) with <strong>256K-token context as configured</strong> (262K native). Verified on the machine with <code>ollama list</code> and <code>ollama show</code> in Oct 2026.
+  - Llama 3.1 8B handles fast, light tasks; LLaVA 13B covers vision; nomic-embed-text provides embeddings.
+- <strong>Reproducible model inventory.</strong> Every model is declared in one config file (name, source, quantization, context length, runtime settings) and imported by script, so the setup can be rebuilt on any machine.
+- <strong>Own chat assistant on Open WebUI</strong> (Docker). One interface serves the local Ollama models and cloud model APIs (e.g., Gemini).
+- <strong>Private search.</strong> SearxNG metasearch gives answers grounded in the web without sending queries to a search vendor.
+- <strong>Dual-machine architecture.</strong> A lightweight always-on UI host, with on-demand inference on the Apple Silicon workstation over a Tailscale private network. Local and LAN access can be toggled.
+- <strong>Operations:</strong>
+  - A one-command launcher that installs Homebrew, Ollama and Docker if missing.
+  - Safe image updates (Watchtower) and self-healing port conflicts.
+  - Persistent data volumes reused across rebuilds, and a maintenance script that preserves all chat history.
+- <strong>Reused across the ecosystem.</strong> The same local tier powers Claude Code Center's $0 route, AMTrix Studio and the AI Companion Toolkit.</p>
+<p><strong>Why it matters for you.</strong> It covers on-prem AI for privacy-sensitive data, offline capability, near-zero marginal cost, and practical guidance on which models fit which hardware before any cloud spend.</p>
+<hr />
+<h3>4 · Universal MCP Analysis Server: Multi-Model Deep-Analysis Tools for Any IDE Agent</h3>
+<p><em>Python · Model Context Protocol · AWS Bedrock (Converse API) · OpenRouter · built to serve my own IDE-agent workflow, then generalized to any MCP client</em></p>
+<p><strong>Problem.</strong> IDE agents choke on large codebases: file contents bloat the chat context, long answers get truncated, and follow-up questions re-read everything.</p>
+<p><strong>What I built.</strong> An MCP server with ten discrete tools: project AST index, deep analysis, quick summary, code review, drill-down, continue, deep research, session checkpoint, session recap and wrap-up. It is <strong>model-agnostic</strong> (per-call provider and model override, aliases such as Kimi, Sonnet and DeepSeek), with Bedrock as primary and OpenRouter as fallback.</p>
+<p><strong>Engineering highlights</strong>
+- <strong>Pass-by-path.</strong> The IDE sends only file paths and the server reads from disk, so source code never enters the agent's context.
+- <strong>Anti-truncation loop.</strong> Detects cut-off output (<code>finish_reason: length</code>) and continues automatically, up to about 60K output tokens across 8 chained calls.
+- <strong>Two-stage output.</strong> The raw exhaustive analysis is stored locally under a reference ID (7-day TTL); a compressed, schema-structured JSON summary goes back to the agent. Drill-down answers follow-ups from the stored analysis without re-processing.
+- <strong>Fallback client built only on Python's standard library</strong>, so the server keeps running when the primary provider is down.
+- <strong>Embeds the Frontier Triage Engine</strong> for audited, hashed model calls.</p>
+<p><strong>Why it matters for you.</strong> It is the template for connecting agents to internal code and knowledge through MCP, with the context discipline that keeps them accurate.</p>
+<hr />
+<h3>5 · Frontier Triage Engine: Audited, Reproducible, Cost-Gated Model Dispatch</h3>
+<p><em>Python · OpenRouter · offline test suite</em></p>
+<ul>
+<li><strong>Byte-exact requests.</strong> Each request is serialized once and recorded with its <strong>SHA-256 hash</strong>; the exact same bytes are transmitted.</li>
+<li><strong>Response classification.</strong> Every response is classed <code>COMPLETE / PARTIAL / FAILED / UNKNOWN</code>, so a truncated output is never mistaken for a finished one.</li>
+<li><strong>Audit tracer.</strong> Monotonic attempt IDs under a file lock, atomic fsync writes, and recursive secret redaction on everything persisted.</li>
+<li><strong>Pre-flight cost card with a human y/N gate</strong> before any paid call. Code context comes from a zero-token AST indexer.</li>
+<li><strong>Deployable into any project with one script.</strong> The full test suite runs offline at $0.</li>
+</ul>
+<p><strong>Why it matters for you.</strong> This is model-risk discipline (<em>what exactly did we send, what came back, who approved the spend</em>) of the kind banks and insurers need for AI.</p>
+<hr />
+<h3>6 · Vision LLM Decision Agent: Real-Time Visual Perception with Deterministic Policy</h3>
+<p><em>Python · vision-language models · screen capture &amp; action verification · versioned XML protocols</em></p>
+<p><strong>Problem.</strong> Vision and computer-use agents are powerful but nondeterministic. They hesitate, over-analyze and act inconsistently during long unattended sessions.</p>
+<p><strong>What I built.</strong> A real-time visual decision agent, applied to market-chart monitoring. A VLM reads the live screen. Decisions come from a <strong>strict priority policy table</strong>, and every action is verified before it counts.</p>
+<p><strong>Engineering highlights</strong>
+- <strong>Priority lookup policy.</strong> P0 risk override → P1 movement classification (cached at entry) → P2 stop rules → P3 counter-signal (immediate override of P2) → P4 profit protection. The model <strong>looks up</strong>; it doesn't deliberate. Same input, same output.
+- <strong>Clean separation of perception (VLM), decision (deterministic rules) and action (verified)</strong>, which is the architecture computer-use agents need.
+- <strong>Session engineering for 4–5-hour unattended runs.</strong> Context-window budgeting per screenshot (~1.5K tokens), session-rollover strategy, and a written feasibility and risk analysis.
+- <strong>Swappable strategy cartridges, configuration audit and an action verifier.</strong> A project generator for new vision agents went through 10+ iterations.</p>
+<p><strong>Why it matters for you.</strong> It automates legacy desktop and web applications with no API, along with visual QA, dashboard monitoring and screen-based triage, with predictable behavior.</p>
+<hr />
+<h3>7 · Computational Ephemeris &amp; Multi-Factor Scoring Engine</h3>
+<p><em>Python · Swiss Ephemeris · pytz / geocoding · SVG rendering · strict XML schema · 9 regression &amp; invariant test suites</em></p>
+<p><strong>Problem.</strong> Classical chart-interpretation systems (here, the Jyotish tradition) are usually done by hand or by an LLM that "guesses". The results are inconsistent and can't be verified.</p>
+<p><strong>What I built.</strong> A deterministic computation engine. <strong>All mathematics happens in code. The LLM only receives validated evidence and interprets it.</strong></p>
+<p><strong>Engineering highlights</strong>
+- <strong>High-precision astronomical computation.</strong> Swiss Ephemeris planetary longitudes and speeds, Julian Day conversion, timezone normalization from geocoded birthplaces, and house-cusp computation.
+- <strong>Coordinate transforms.</strong> Tropical-to-sidereal correction with a selectable reference model (three standard ayanamsa systems), plus true lunar-node precision.
+- <strong>Modular-arithmetic projections.</strong> Eight harmonic divisional charts computed by subdividing ecliptic longitude.
+- <strong>Period-timeline computation.</strong> A 120-year planetary-period timeline derived mathematically from lunar longitude.
+- <strong>Multi-factor scoring models.</strong> A six-component weighted strength score per body, an 8×12 point-allocation matrix for transit scoring, an aspect matrix, rule-based pattern detection (15+ combinations), and a composite "net impact" score that drives visual encoding.
+- <strong>Verification.</strong> Regression tests against independently audited charts, mathematical invariants, evidence-consistency and event-integrity checks, transit-timeline matching, and <strong>strict schema validation of every XML file sent to the LLM</strong>.</p>
+<p><strong>Why it matters for you.</strong> It is the <strong>"compute, then narrate"</strong> pattern. The same architecture applies to credit scoring, actuarial rating, engineering calculations and any domain where an LLM must never be the one doing the math.</p>
+<hr />
+<h3>8 · Real-Time Availability Intelligence &amp; Multi-Channel Alerting Platform</h3>
+<p><em>Python · SQLite · web cockpit (one framework-free HTML file) · Telegram Bot API · self-hosted ntfy with failover · Swift companion · v2 origin Oct 2025, v3 with 62 commits through Oct 2026 · runs under the AMTrix Plan standard</em></p>
+<ul>
+<li><strong>Explicit, guarded process topology.</strong> One launch starts four daemons per product profile (feed watcher, Apple-JSON parser, HTTP dashboard, browser-session harvester). The parser and harvester are lock-elected singletons across all profiles with standby takeover; each dashboard registers a PID-verified instance; the port guard never kills another profile's server.</li>
+<li><strong>Parsed, not scraped.</strong> Apple's fulfillment JSON is parsed into model, size, colour and store events with canonical store names and a composed direct checkout URL. Alerts follow the live dashboards: transitions for a product with no open dashboard are recorded but not pushed, and a registry failure defaults to alerting so nothing is silenced by mistake.</li>
+<li><strong>Concurrency correctness.</strong> A cross-process file-locked alert-state store with change detection, atomic writes, schema migration, cooldowns and first-run baseline suppression, built from a root-cause analysis of duplicate and lost alerts.</li>
+<li><strong>Multi-channel dispatcher with an audit trail.</strong> Telegram, self-hosted ntfy with primary-to-secondary failover, Discord and desktop; every delivery appends a JSONL event (provider, HTTP status, error); rich cards with three action buttons.</li>
+<li><strong>Config-driven extension.</strong> 12 YAML product profiles over a 35-store registry with 4 anchor ZIPs; a new product line is a profile and a port; a nine-command CLI covers once/watch/sync/export/verify-links/audit-fulfillment and alert tests.</li>
+<li><strong>Telemetry into decisions.</strong> About 9.8M observations and 60K stock transitions over six weeks analysed in SQL into per-store restock windows and median time-in-stock.</li>
+<li><strong>The production proof</strong> that the AMTrix Plan governance standard works on a real product.</li>
+</ul>
+<p><strong>Why it matters for you.</strong> The same pattern fits inventory, pricing and SLA monitoring with alerts that reach a human within seconds.</p>
+<hr />
+<h2>Supporting Systems</h2>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>What it is</th>
+<th>Stack</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AMTrix Core &amp; Skill Viewer</strong></td>
+<td>Metadata-routed instruction-set library: 27 skills and 7 workflow sets with YAML capability, fallback and proof fields; compilers generate a routing index, a Markdown-to-XML protocol form, editor snippets, a one-paste startup prompt and macOS/iPhone text replacements from one Markdown source; a backup-first editing CLI born from a documented data-loss incident; a serverless "cartridge" viewer whose plan-review-approve-verify board became AMTrix Plan; a QA skill wired to the gateway's live diagnostics so the model must produce HTTP payloads, SQLite rows or SSE logs as proof</td>
+<td>Python, Bash, HTML/JS</td>
+</tr>
+<tr>
+<td><strong>AMTrix Signal Layer</strong> (VoiceBus + Notify-Bus)</td>
+<td>Agents publish JSON-Schema-validated events; policy-based routing to desktop alerts, text-to-speech (per-agent voices) or a self-hosted push server; external delivery off by default. <strong>Human-in-the-loop at a distance</strong> for long-running agents</td>
+<td>TypeScript, Express, ajv, chokidar, vitest, Docker Compose, Caddy</td>
+</tr>
+<tr>
+<td><strong>AMTrix Studio</strong></td>
+<td>MCP control plane: start and stop tool servers, 5 working tools, multi-provider routing (local and cloud), local vector-memory RAG</td>
+<td>Python, Textual/Rich, YAML</td>
+</tr>
+<tr>
+<td><strong>PromptForge</strong></td>
+<td>IDE for modular, version-controlled LLM instruction sets: components, includes, conditional assembly, live build preview, diff</td>
+<td>React, TypeScript, Vite, Google GenAI SDK</td>
+</tr>
+<tr>
+<td><strong>SmartBrain Voice Agents</strong></td>
+<td>Multi-agent voice assistant with intent routing between specialist personas, session memory, and portable deployment (Alexa Hosted / AWS Lambda / GCP Functions / local)</td>
+<td>Node.js, Gemini</td>
+</tr>
+<tr>
+<td><strong>AI Companion Toolkit</strong></td>
+<td>Portable terminal coding assistant: user-curated context, per-call latency and token metrics, secret redaction in error paths (v1.x), MCP triage mode, command-output feedback into the prompt, git integration, formal test matrix</td>
+<td>Python, OpenRouter, Ollama</td>
+</tr>
+<tr>
+<td><strong>Patch TUI</strong></td>
+<td>Applies only the edits declared in a JSON manifest; shows hashes and a unified diff; writes a versioned sibling file and never touches the original</td>
+<td>Python, Bash</td>
+</tr>
+<tr>
+<td><strong>Mode-Scoped Agent Launcher</strong></td>
+<td>Explicit agent modes (discuss / research / plan / implement / verify / diagnose); a scope guard that blocks out-of-bounds edits; a 3-hypothesis debugger; evidence-stamped wrap-up; plugs into any launcher</td>
+<td>Claude Code hooks, Node.js</td>
+</tr>
+<tr>
+<td><strong>Mermaid Dashboard Generator</strong></td>
+<td>Renders architecture diagrams and dashboards from structured text; SVG with tables embedded in nodes</td>
+<td>HTML, JavaScript, Mermaid</td>
+</tr>
+<tr>
+<td><strong>Identity Engine</strong></td>
+<td>Brand definition in YAML generates a multi-format brand kit (CSS with light/dark/adaptive blocks, doc/PPT/image guidelines); a one-script drop-in theming layer with a live tuner restyles any HTML page without touching its markup</td>
+<td>Python, YAML, CSS, JavaScript</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Lessons from the Trenches</h2>
+<p>Every failure is logged as <em>friction</em>. The friction is reviewed and turned into a rule, and <strong>the rule is enforced by code</strong> rather than by memory. Friction logs run through my Agent Protocol (with a cross-project master index), AMTrix Core and AMTrix Plan, which records per-version friction and a "what we learned" report. This loop keeps me consistent and is how my expertise compounds.</p>
+<table>
+<thead>
+<tr>
+<th>What went wrong</th>
+<th>The wisdom</th>
+<th>Where it lives now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lost a full working gateway build and had to recover the system</td>
+<td>Backups are not optional, and a restore must be proven</td>
+<td>Backup-before-first-edit hooks, versioned snapshots, git discipline in every project</td>
+</tr>
+<tr>
+<td>AI edits silently truncated or overwrote whole files</td>
+<td>Never let a model rewrite a whole file</td>
+<td>Evolved from brittle diffs, to full-file replacement, to <strong>manifest patches with hashes and versioned siblings</strong>; net-deletion alarms</td>
+</tr>
+<tr>
+<td>Models reported "done" when work wasn't done</td>
+<td>A claim needs evidence</td>
+<td>Test counts and timings written by code; reviews marked <em>measured</em> vs. <em>judgement</em></td>
+</tr>
+<tr>
+<td>Long instruction sets collapsed after 5–10 turns</td>
+<td>Small beats big</td>
+<td>Atomic skills, composed workflows, compiled context handoffs</td>
+</tr>
+<tr>
+<td>Summaries dropped exactly the detail that mattered</td>
+<td>Remove redundancy, not meaning</td>
+<td>Context Compressor; raw output stored alongside every summary (MCP drill-down)</td>
+</tr>
+<tr>
+<td>A vision agent hesitated and over-analyzed under time pressure</td>
+<td>Where rules exist, don't let the model deliberate</td>
+<td>Priority lookup tables; "compute, then narrate"</td>
+</tr>
+<tr>
+<td>A provider-name casing issue caused silent "no endpoints" failures</td>
+<td>Verify end to end with real calls</td>
+<td>Live smoke tests; standardized error pass-through</td>
+</tr>
+<tr>
+<td>A hidden directory sweep burned ~23K tokens on a trivial prompt</td>
+<td>Watch what the tool actually sends</td>
+<td>Payload capture vault, ignore policies, cost HUD</td>
+</tr>
+<tr>
+<td>An API key appeared in an error message</td>
+<td>Secrets leak through error paths</td>
+<td>Recursive redaction; pre-commit secret scanning</td>
+</tr>
+<tr>
+<td>Subscription and single-vendor lock-in</td>
+<td>Own the routing layer</td>
+<td>Claude Code Center; the private local tier</td>
+</tr>
+<tr>
+<td>Forgetting my own best patterns over weeks; re-explaining projects to every new session</td>
+<td>Memory belongs on disk, not in heads or chats</td>
+<td>On-disk protocol, catch-up reports, automatic resume</td>
+</tr>
+<tr>
+<td>Losses in trading, in an earlier career chapter</td>
+<td>Risk comes first</td>
+<td>P0 risk override in decision agents; approval gates before any spend</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Where I Fit in 2026</h2>
+<table>
+<thead>
+<tr>
+<th>What your team is facing</th>
+<th>What I deploy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coding agents rolled out to hundreds of developers; spend rising, quality uneven</td>
+<td>Gateway with caching, routing and cost telemetry, plus a governance standard in every repo</td>
+</tr>
+<tr>
+<td>A regulated firm needs an audit trail for AI-assisted changes (model risk, SOC 2, AI governance)</td>
+<td>Hashed request records, append-only logs, approval gates, measured evidence, backed by 15+ years in bank risk and model validation</td>
+</tr>
+<tr>
+<td>Data that can't go to a public cloud LLM</td>
+<td>Private model stack on local hardware, with a chat front end and private search</td>
+</tr>
+<tr>
+<td>Agents lose context across multi-day work</td>
+<td>Compiled-context handoffs, catch-up reports, cross-repo protocol sync, compression</td>
+</tr>
+<tr>
+<td>A legacy application with no API needs automation</td>
+<td>Vision agent with a deterministic policy and verified actions</td>
+</tr>
+<tr>
+<td>Internal knowledge and tools need to reach agents</td>
+<td>Custom MCP servers with pass-by-path loading, anti-truncation and drill-down</td>
+</tr>
+<tr>
+<td>Too many disconnected AI tools and scripts</td>
+<td>Decompose, modularize and reconnect them into one plug-and-play system</td>
+</tr>
+<tr>
+<td>Calculations that must be exact, with AI used only to explain them</td>
+<td>A "compute, then narrate" engine with schema-validated evidence</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Technical Toolkit</h2>
+<ul>
+<li><strong>AI &amp; agents:</strong> Claude Code (hooks, skills, slash commands), Codex, Gemini CLI, Model Context Protocol (servers &amp; clients), multi-agent orchestration, vision-language models, prompt caching, context engineering, RAG, agent evaluation and test harnesses</li>
+<li><strong>Model platforms:</strong> Anthropic API, Google Vertex AI (incl. Model-as-a-Service), AWS Bedrock (Converse), OpenRouter (BYOK routing)</li>
+<li><strong>Local &amp; private AI:</strong> Ollama, Open WebUI, SearxNG, GGUF quantized models (Qwen3, Llama, LLaVA), Apple Silicon unified-memory inference, Tailscale</li>
+<li><strong>Languages:</strong> Python, TypeScript/JavaScript (Node.js), Bash, SQL (T-SQL, PL/SQL), Rust (performance modules), Swift (components), C# / .NET</li>
+<li><strong>Back end &amp; data:</strong> Express, SQLite, PostgreSQL (Drizzle ORM), SQL Server, Oracle, Sybase, SSIS, data-warehouse design, JSON Schema, XML schema validation</li>
+<li><strong>Front end &amp; visualization:</strong> React, Vite, Radix/shadcn UI, Tailwind, Mermaid, SVG generation, terminal UIs (Textual/Rich, Bash)</li>
+<li><strong>Infrastructure:</strong> Docker / Compose, Caddy (TLS), self-hosted push (ntfy), Telegram Bot API, GCP service-account OAuth2, git hooks, macOS and Linux automation</li>
+<li><strong>Domain:</strong> credit risk (PD/LGD/EAD, Basel II/III IRB, CCAR, FR Y-14), model implementation testing, regulatory reporting</li>
+</ul>
+<hr />
+<h2>Career Foundation</h2>
+<p><strong>AMTrix Solutions Inc.</strong> · Founder &amp; AI Systems Engineer · Apr 2022 – Present
+Designs and builds AI-agent infrastructure, LLM gateways, private AI platforms, MCP servers and deterministic AI pipelines (everything above). Consults on AI integration for mid-market and small-business clients.</p>
+<p><strong>AKM USA Trading Inc.</strong> · Principal / Technology Lead · 2017 – Apr 2022
+Ran trading operations with periodic technology projects: conversational chatbots, voice/chat automation, API orchestration.</p>
+<p><strong>Malhotra Enterprise Solutions LLC</strong> · Lead Consultant · Nov 2013 – 2017
+- Implemented wholesale PD models on a new risk-rating platform for a major regional bank.
+- Built a SQL Server model-implementation accuracy-testing platform and CCAR stress scenarios.
+- Delivered Basel II/CCAR reporting integration for a 30+ bank consortium.</p>
+<p><strong>Copal Amba (a Moody's Analytics company)</strong> · Vice President · May 2015 – Nov 2015
+RWA calculation and forecasting architecture and FR Y-14 regulatory reporting for CCAR at a major international bank.</p>
+<p><strong>Moody's Analytics</strong> · Assistant Director / Lead Consultant · Jul 2007 – Nov 2013
+- Led RiskAnalyst / RiskOrigin implementations for Fortune 500 financial institutions.
+- Built a BI platform for Basel II/CCAR model validation.
+- Fully automated the Credit Research Database pipeline, led its SQL Server migration, and built RiskCalc scoring integrations.</p>
+<p><strong>Intelligent Search Technology</strong> · Software Developer · Jun 2005 – Jul 2007
+Built fuzzy name matching on the NameSearch engine, address extraction in C/C#, and SDKs for Oracle, SQL Server, .NET and PHP.</p>
+<p><strong>The bridge:</strong> for 15 years I validated that credit-risk models were implemented exactly as specified. I now apply the same discipline to AI agents: verify the inputs, reproduce the outputs, and leave an audit trail.</p>
+<hr />
+<h2>Education</h2>
+<p><strong>Syracuse University</strong>, L.C. Smith College of Engineering and Computer Science
+B.S. Computer Science, Minor in Mathematics, 2005</p>
+<hr />
+<h2>Verification Note (Oct 2026)</h2>
+<p>Every project above was re-read in full in October 2026 against its code or current documentation, with one exception group. The <strong>Private AI Platform</strong> launcher, <strong>PromptForge</strong>, <strong>SmartBrain voice agents</strong>, <strong>AMTrix Studio</strong>, the <strong>Context Compressor</strong> and the IDE web UI are described from the earlier project write-ups only; their folders were unreadable during the re-check. The local model inventory itself (models, quantizations, context lengths) was verified directly on the machine. Facts in those six sections are kept general until they are re-read.</p>
+<h2>---</h2>
+<h2>Appendix A: Profile Copy (LinkedIn / Upwork / Bio)</h2>
+<p><strong>Headline options</strong>
+1. Forward Deployed AI Engineer | Agent Reliability, LLM Gateways, Private AI &amp; MCP | Ex-Moody's Analytics
+2. I make AI agents dependable: governance, gateways, context engineering | 21 yrs enterprise tech
+3. AI Agent Infrastructure Engineer | Claude Code · Vertex AI · Bedrock · Ollama · MCP | Bank-grade rigor</p>
+<p><strong>About (≈1,900 characters)</strong></p>
+<blockquote>
+<p>I build the infrastructure that makes AI agents dependable in real work.</p>
+<p>I spent 15+ years at Moody's Analytics and in bank risk consulting, building data warehouses and validating that credit-risk models were implemented exactly as specified. Since 2025 I've applied that same rigor, full time, to LLM-agent systems.</p>
+<p>What I've built:
+• A vendor-independent LLM gateway that runs the Claude Code agent on Google Vertex AI (including third-party models), AWS Bedrock, OpenRouter or local models, with caching, tool calling and cost telemetry, and no subscription lock-in.
+• A private AI platform: 30B-class models on a 64 GB Apple Silicon workstation with Ollama, my own Open WebUI assistant that combines local and cloud models, and private web search.
+• A drop-in governance standard that makes any AI coding agent resume where it stopped, back up before editing, stay in scope and prove its work with measured tests.
+• MCP servers that give IDE agents deep, multi-model analysis without context bloat.
+• Deterministic "compute, then narrate" engines, and real-time vision agents with rule-based decision policies.</p>
+<p>How I work: I get into the details of a complex process, break it into small plug-and-play pieces, and rebuild it so it is simple to use. Everything I build is lightweight, portable and designed to connect with everything else. Every failure becomes a rule enforced by code.</p>
+<p>I work as a forward-deployed engineer: embed with your team, find where your AI breaks, and ship the fix. Open to full-time, contract and 1099 engagements.</p>
+</blockquote>
+<h2>Appendix B: Client Intro (email / DM)</h2>
+<blockquote>
+<p>Hi [Name], I help teams make their AI agents dependable. Recent work: a gateway that runs Claude Code on Vertex AI, Bedrock or local models with caching and cost tracking; a private AI stack on local hardware for sensitive data; a governance layer that makes coding agents back up, stay in scope and prove their work; and custom MCP servers for deep code analysis. My background is 15+ years in bank risk technology (Moody's Analytics), so I build with audit trails by default. If your team is rolling out agents and fighting cost, context loss or trust, I'd welcome 20 minutes to compare notes.</p>
+</blockquote></body></html>
