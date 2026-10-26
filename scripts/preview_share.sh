@@ -17,7 +17,7 @@ echo "---"
 echo "$(printf '%s\n' "$files" | grep -c .) files would be shared"
 
 # The only roots a shared file may live under (keep in step with the "!" lines of .gitignore).
-SHARED='^(\.gitignore|README\.md|(DATA_REFERENCES|FINAL_RESUMES|INTERVIEW_PREP|STRATEGIC_PITCH|project_review_2026-10-25_second-pass-check|scripts|tests)/.+)$'
+SHARED='^(\.gitignore|README\.md|(DATA_REFERENCES|FINAL_RESUMES|INTERVIEW_PREP|STRATEGIC_PITCH|scripts|tests)/.+)$'
 # Never shared even under those roots: edit backups and system clutter.
 CLUTTER='_v[0-9]+\.[0-9]+\.[0-9]+_[0-9]{2}-[0-9]{2}-[0-9]{2}__|\.DS_Store|__pycache__|\.pyc$'
 bad_path=$(printf '%s\n' "$files" | grep -vE -- "$SHARED"; printf '%s\n' "$files" | grep -E -- "$CLUTTER")
