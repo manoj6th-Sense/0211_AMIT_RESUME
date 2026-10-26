@@ -1,0 +1,30 @@
+# Résumé project: what a helper may see.
+# Allow-list: everything at the root is ignored, then only the lines with "!" come back.
+# A new folder stays private until someone adds a "!" line for it here.
+# Check before the first commit: sh scripts/preview_share.sh
+
+/*
+
+# --- shared: these folders and files, nothing else ---
+!/.gitignore
+!/README.md
+!/DATA_REFERENCES/
+!/FINAL_RESUMES/
+!/INTERVIEW_PREP/
+!/STRATEGIC_PITCH/
+!/scripts/
+!/tests/
+
+# --- add later if wanted: remove the "#" (both hold only the plan workflow today) ---
+# !/CLAUDE.md
+# !/GEMINI.md
+
+# --- never shared, even inside a shared folder ---
+# automatic edit backups (name_vX.Y.Z_YY-MM-DD__HH.MM.SS.ext)
+*_v[0-9]*.[0-9]*.[0-9]*_[0-9][0-9]-[0-9][0-9]-[0-9][0-9]__*
+.DS_Store
+__pycache__/
+*.pyc
+~$*
+# Backups (name_vX.Y.Z_YY-MM-DD__HH.MM.SS.ext): for the human only, never committed
+*_v[0-9]*.[0-9]*.[0-9]*_[0-9][0-9]-[0-9][0-9]-[0-9][0-9]__[0-9][0-9]*

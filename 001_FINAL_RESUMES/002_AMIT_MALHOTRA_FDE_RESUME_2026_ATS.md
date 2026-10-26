@@ -1,0 +1,68 @@
+# AMIT MALHOTRA
+> 🕒 Last changed: v0.1.1 · 26-10-25__14.34.55
+> 🗓️ Created: 26-10-25__14.34.55
+> **Document Version:** v1.0  
+> **Last Modified:** 2026-10-27 00:00 UTC+4  
+> **Status:** Baseline
+Hicksville, NY 11801 | (917) 345-7516 | amit.malhotra1@gmail.com | github.com/amit-malhotra1 | Open to full-time, contract and 1099
+
+**FORWARD DEPLOYED AI ENGINEER**
+LLM Gateways · Agent Governance · MCP Servers · Private AI · Deterministic AI Pipelines
+
+## SUMMARY
+
+Forward Deployed Engineer who embeds with a team, finds where its AI agents fail (lost work, runaway cost, context collapse, "done" without proof, vendor lock-in) and ships the harness that fixes it. 21 years in enterprise technology: 15 years building credit-risk data platforms and validating model implementations for Moody's Analytics and major banks; since 2025, full-time hands-on engineering of LLM-agent infrastructure with 20+ shipped tools and platforms. I own my model access end to end: a self-built multi-provider gateway, a private 64 GB Apple Silicon inference node, and a governance layer that makes any coding agent back up, stay in scope and prove its work. Everything I build is a small, portable, plug-and-play module designed to connect with the rest.
+
+## CORE COMPETENCIES
+
+LLM gateway and routing (Anthropic, Google Vertex AI incl. Model-as-a-Service, AWS Bedrock, OpenRouter BYOK, OpenAI, Ollama) · Prompt caching and token cost engineering · Claude Code hooks, skills and permission handling · Model Context Protocol (MCP) server design · Agent governance, audit trails, human-in-the-loop gates · Context engineering · Private and on-prem AI (Ollama, Open WebUI, GGUF 30B models, Tailscale) · Vision-language model automation · Deterministic "compute, then narrate" pipelines · Self-hosted notifications (ntfy, Caddy TLS, Docker) · Python, TypeScript/Node.js, Bash, SQL, Swift (components), C#/.NET · SQLite, PostgreSQL, SQL Server, JSON Schema, XML/XSD · Credit risk (Basel II/III, CCAR, FR Y-14), model validation, data warehousing
+
+## EXPERIENCE
+
+### AMTrix Solutions Inc., Hicksville, NY — Founder and AI Systems Engineer | Apr 2022 – Present
+Full-time LLM-agent engineering since 2025. Every project below is mine, designed and built end to end.
+
+**Model access and cost control**
+- Built **Claude Code Center**, a self-hosted LLM gateway (Node.js, Express, SQLite) that routes the Claude Code agent explicitly, with no silent fallbacks, to OpenRouter, Google Vertex AI (Gemini native, Claude rawPredict, third-party models such as Kimi K2 and DeepSeek), OpenAI or local Ollama.
+- Made tool calling work on non-Anthropic models with a streaming SSE accumulator that reassembles fragmented function-call fields into clean tool blocks; tool support flagged per model in a registry.
+- Cut spend with 1-hour prompt-cache injection, a keepalive daemon with measured cost per hour, Vertex explicit context caching, an exact-match response cache and per-model token-diet profiles; a HUD shows tokens, cache hits and cost per request.
+- Moved IDE extension traffic onto my own Vertex billing with an endpoint patcher and request translator. Reached this design by iterating from a CLI context router (13+ provider adapters, heuristic cost routing) through a mitmproxy observability layer for my own LLM sessions.
+- Built a cost-governed agent launcher that pins billing route, model and cache, strips inherited API variables and rejects configs that could reroute billing; 162 offline automated checks.
+
+**Agent governance and reliability**
+- Designed and built **AMTrix Plan**, a drop-in, zero-dependency governance standard for AI coding agents (~23K lines of stdlib Python, 700+ automated tests). Every session becomes a numbered, read-only, fingerprinted record; approvals are stored in the human's own words; "done" means the project's tests and pre-approved acceptance commands passed, measured by code.
+- Wired all seven Claude Code hook events, including a PermissionRequest handler that auto-approves only the loop's own calls under a time-boxed standing approval. Used live with Claude Code; adapters for Codex and Antigravity.
+- Enforcement in depth: OS read-only records, a git pre-commit gate with staged-secret detection, pre-edit backups, no edits without an approved iteration, and a rules ledger mapping ~190 written rules to the code that enforces each one.
+- Productised it: menu installer with preview and undo, one-command update and health check across installed projects, a phone review page over Tailscale, and a portable human-in-the-loop standard adoptable without the code. Deployed to three of my projects.
+- Built the **Frontier Triage Engine**: byte-exact SHA-256 request hashing, a four-state outcome classifier (PARTIAL halts downstream stages), human approval gates and a crash-safe audit ledger, packaged as a self-verifying one-command deployer.
+- Built **AMTrix VoiceBus**, an agent-to-human communications and audit bus: versioned JSON Schema event contract, write-once artifacts (JSON, Markdown brief, speech, JSONL log), deny-by-default channel policy and a live SSE dashboard.
+
+**Agent tooling and context engineering**
+- Shipped a **multi-model MCP server** (FastMCP; Bedrock primary, OpenRouter fallback) with ten tools that keep IDE context small: pass-by-path loading, a reference-ID raw store with schema-bound JSON compression, drill-down and continue tools, and an anti-truncation loop with explicit partial/complete reporting.
+- Built **AMTrix Core**, a metadata-routed LLM instruction-set library (27 skills, 7 workflow sets with YAML capability, fallback and proof fields) whose compilers generate a routing index, an XML protocol form, editor snippets and macOS/iPhone text replacements from one Markdown source; turned a documented data-loss incident into a backup-first editing CLI.
+- Designed a layered, portable instruction architecture with a project-memory protocol synchronised across 11 projects, and a manifest-driven skill deploy engine (SHA-256 lockfile drift detection, 63-check verification) fanning one source to Antigravity, Claude Code and Cursor.
+- Built an AI coding-companion TUI (Python, Textual) with three orchestration modes: direct, LLM triage routing through a local model, and a planner-executor pipeline producing one reviewed patch; provider-agnostic across OpenRouter, OpenAI, Anthropic, Gemini and Ollama.
+
+**Private AI platform**
+- Run a private inference node on a 64 GB Apple M1 Max: Qwen3 30B mixture-of-experts coder and reasoning models as Q5_K_M/Q6_K GGUF builds at 256K-token context, plus Llama 3.1 8B, LLaVA 13B vision and nomic embeddings, declared in one reproducible model config; Open WebUI front end, private SearxNG search and a dual-machine Tailscale layout. Powers the gateway's $0 local tier.
+
+**Applied systems**
+- Built and operate a **real-time retail-availability platform**: four daemons per product profile, lock-elected singleton harvester with standby takeover, PID-verified instance registry; Apple fulfillment JSON parsed into model/size/colour/store events with direct checkout URLs; multi-channel dispatcher (Telegram, self-hosted ntfy with failover, Discord, desktop) with per-delivery JSONL audit; 12 YAML profiles over a 35-store registry; ~9.8M observations analysed in SQL to size restock windows.
+- Built self-hosted notification infrastructure: Dockerised ntfy behind Caddy TLS on my own domain, deny-by-default ACLs, token auth, APNs upstream and an idempotent desired-state "ensure" script. Any tool gets push alerts by setting two environment variables.
+- Built a **vision-LLM desktop automation framework**: a multimodal model perceives and decides, a deterministic JSON state machine executes, with a pluggable cartridge per application, a routine DSL with mandatory success/fail branching and a React zone builder; 28.6K audited actions across 270 runs on a live trading UI with LLM-bypassing hard risk rules and intent-to-outcome verification.
+- Built a deterministic, evidence-traced rules engine on the Swiss Ephemeris: versioned scoring policies, rule-ID provenance on every score, XSD-validated XML handed to the LLM, which only narrates computed numbers; prompt SHA-256 recorded per run; 30 pytest invariants.
+- Built a fail-closed patch utility (JSON manifests, SHA-256 before/after fingerprints, diff preview, versioned outputs) and used it to ship a multi-file gateway release.
+
+### Earlier career
+**AKM USA Trading Inc.** — Principal / Technology Lead | 2017 – Apr 2022. Trading operations with periodic technology projects: conversational chatbots, voice/chat automation, API orchestration.
+
+**Malhotra Enterprise Solutions LLC** — Lead Consultant | Nov 2013 – 2017. Wholesale PD model implementation and a SQL Server model-accuracy testing platform for a major regional bank; CCAR stress scenarios; Basel II/CCAR reporting integration for a 30+ bank consortium; AML software programme management.
+
+**Copal Amba (a Moody's Analytics company)** — Vice President | May 2015 – Nov 2015. RWA calculation and forecasting architecture and FR Y-14 CCAR reporting for a major international bank.
+
+**Moody's Analytics** — Assistant Director / Lead Consultant | Jul 2007 – Nov 2013. Led RiskAnalyst and RiskOrigin implementations for Fortune 500 financial institutions; built a BI platform for Basel II and CCAR model validation; automated the Credit Research Database pipeline and led its SQL Server migration; RiskCalc (EDF/PD) integrations.
+
+**Intelligent Search Technology** — Software Developer | Jun 2005 – Jul 2007. Fuzzy name matching on the NameSearch engine; address extraction in C/C#; SDKs for Oracle, SQL Server, .NET and PHP.
+
+## EDUCATION
+**Syracuse University**, L.C. Smith College of Engineering and Computer Science — B.S. Computer Science, Minor in Mathematics, 2005

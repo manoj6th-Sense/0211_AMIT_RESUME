@@ -8,34 +8,29 @@
 ## 📂 Folder Structure
 
 ```
-AMIT_RESUME_PORTFOLIO/
-├── FINAL_RESUMES/                         ← Ready to send
-│   ├── AMIT_MALHOTRA_FDE_PROFILE_2026.md  ← ⭐ MASTER client/profile document (detailed)
-│   ├── Resume_Complete_TechnoFunctional.md← Technical resume (FDE positioning)
-│   ├── Resume_BusinessAnalyst_PM.md       ← BA / PM resume
-│   └── LinkedIn_Profile.md                ← LinkedIn copy
-│
-├── INTERVIEW_PREP/                        ← Personal reference only (NOT for sharing)
-│   ├── Quick_Reference_Card.md            ← Interview-day card (updated Oct 2026)
-│   ├── Interview_Questions.md             ← Incl. FDE technical questions (Oct 2026)
-│   ├── Resume_FullDetail_PERSONAL.md      ← Jan 2026 snapshot
-│   ├── Portfolio_Analysis_and_Gap_Strategy.md
-│   ├── Competitive_Edge_Analysis.md       ← Jan 2026 snapshot
-│   └── Honest_Assessment_Summary.md       ← Jan 2026 snapshot
-│
-├── DATA_REFERENCES/                       ← Source material
-│   ├── PROJECT_EXPERTISE_ANALYSIS_2026-10-25.md ← ⭐ Analysis of 24 projects (source of truth)
-│   ├── RESUME_PORTFOLIO_MASTER.md         ← Jan 2026 inventory (instruction-design era)
-│   ├── RESUME_PORTFOLIO_CONTENT_v1.md
-│   ├── SmartBrain_Analysis.md
-│   ├── PromptForge_Analysis.md
-│   └── Ollama_Powerhouse_Analysis.md
-│
-├── STRATEGIC_PITCH/                       ← Pitch narratives
-├── _ARCHIVE/                              ← Backups before each major update
-├── PROJECT_NEXUS.xml                      ← Curated project knowledge (v3.0)
-├── AGENTS.xml                             ← AI protocol (unchanged)
-└── README.md                              ← This file
+0211_AMIT_RESUME/
+├── 000_GITHUB_BACKUP/                         ← Pristine snapshot archive
+├── 000_PROJECT_HISTORY/                       ← Mandatory Project History & Audit trails
+│   ├── 001_IMPLEMENTATION_PLANS/
+│   ├── 002_WALKTHROUGHS/
+│   ├── 003_TASKS_AND_CHECKPOINTS/
+│   ├── 004_SESSIONS/
+│   └── 005_RECAPS_AND_AUDITS/
+├── 001_FINAL_RESUMES/                         ← Ready to send outward collateral
+│   ├── 001_AMIT_MALHOTRA_FDE_PROFILE_2026.md  ← ⭐ MASTER client/profile document (detailed)
+│   ├── 002_AMIT_MALHOTRA_FDE_RESUME_2026_ATS.md ← ATS-optimized resume
+│   ├── 003_APPLICATION_KIT_2026.md           ← Pitch, cover letters, STAR stories
+│   ├── 004_LINKEDIN_PROFILE.md                ← Validated LinkedIn copy
+│   ├── 005_RESUME_BUSINESS_ANALYST_PM.md      ← BA / PM resume
+│   ├── 006_RESUME_COMPLETE_TECHNO_FUNCTIONAL.md ← Full techno-functional resume
+│   └── 007_EXPORTS/                           ← Compiled PDF / DOCX / HTML outputs
+├── 002_STRATEGIC_PITCH/                       ← Executive pitches & value narratives
+├── 003_INTERVIEW_PREP/                        ← Tactical interview prep & gap strategies
+├── 004_DATA_REFERENCES/                       ← Source materials & 24-project technical audits
+├── 005_SCRIPTS/                               ← Export automation & validation scripts
+├── 006_TESTS/                                 ← 7-point QA verification & secret prevention
+├── PROJECT_INDEX.md                           ← Complete file catalog & navigation guide
+└── README.md                                  ← This file
 ```
 
 ---
@@ -44,14 +39,15 @@ AMIT_RESUME_PORTFOLIO/
 
 | Situation | File |
 |-----------|------|
-| **Client outreach / 1099 / detailed profile** | `FINAL_RESUMES/AMIT_MALHOTRA_FDE_PROFILE_2026.md` |
-| **AI / FDE / platform engineering roles** | `FINAL_RESUMES/Resume_Complete_TechnoFunctional.md` |
-| **BA / PM roles** | `FINAL_RESUMES/Resume_BusinessAnalyst_PM.md` |
-| **LinkedIn / Upwork** | `FINAL_RESUMES/LinkedIn_Profile.md` (or Appendix A of the profile) |
-| **Cold email / DM** | Appendix B of the profile |
-| **Interview day** | `INTERVIEW_PREP/Quick_Reference_Card.md` |
-| **Interview practice** | `INTERVIEW_PREP/Interview_Questions.md` |
-| **Deep project facts** | `DATA_REFERENCES/PROJECT_EXPERTISE_ANALYSIS_2026-10-25.md` |
+| **Client outreach / 1099 / detailed profile** | [001_AMIT_MALHOTRA_FDE_PROFILE_2026.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/001_FINAL_RESUMES/001_AMIT_MALHOTRA_FDE_PROFILE_2026.md) |
+| **ATS Job Applications** | [002_AMIT_MALHOTRA_FDE_RESUME_2026_ATS.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/001_FINAL_RESUMES/002_AMIT_MALHOTRA_FDE_RESUME_2026_ATS.md) |
+| **AI / FDE / platform engineering roles** | [006_RESUME_COMPLETE_TECHNO_FUNCTIONAL.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/001_FINAL_RESUMES/006_RESUME_COMPLETE_TECHNO_FUNCTIONAL.md) |
+| **BA / PM roles** | [005_RESUME_BUSINESS_ANALYST_PM.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/001_FINAL_RESUMES/005_RESUME_BUSINESS_ANALYST_PM.md) |
+| **LinkedIn / Upwork** | [004_LINKEDIN_PROFILE.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/001_FINAL_RESUMES/004_LINKEDIN_PROFILE.md) |
+| **Cover Letters & Pitch Stories** | [003_APPLICATION_KIT_2026.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/001_FINAL_RESUMES/003_APPLICATION_KIT_2026.md) |
+| **Interview day** | [005_QUICK_REFERENCE_CARD.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/003_INTERVIEW_PREP/005_QUICK_REFERENCE_CARD.md) |
+| **Interview practice** | [003_INTERVIEW_QUESTIONS.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/003_INTERVIEW_PREP/003_INTERVIEW_QUESTIONS.md) |
+| **Deep project facts** | [004_PROJECT_EXPERTISE_ANALYSIS_2026-10-25.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/004_DATA_REFERENCES/004_PROJECT_EXPERTISE_ANALYSIS_2026-10-25.md) |
 
 ---
 
@@ -97,7 +93,7 @@ AMIT_RESUME_PORTFOLIO/
 
 ## 🛠 Maintenance Notes
 
-- **Source of truth for project facts:** `DATA_REFERENCES/PROJECT_EXPERTISE_ANALYSIS_2026-10-25.md`. Update it first, then the profile, then the resumes.
+- **Source of truth for project facts:** `004_DATA_REFERENCES/004_PROJECT_EXPERTISE_ANALYSIS_2026-10-25.md`. Update it first, then the profile, then the resumes.
 - **Excluded from all documents:** projects named TEST / DEMO / outputs / spoofing / boilerplate / crawler, n8n, and pre-2023 bots.
 - **Naming:** use "AMTrix Plan" (not AMX) in all outward-facing documents.
 - **Claims to measure before citing:** the gateway cost-reduction percentage (from `proxy.db`), AMTrix Plan test counts.
