@@ -18,12 +18,12 @@
 
 | Period | Role | Company | Key Focus |
 |--------|------|---------|-----------| 
-| 2022–Present | Founder & AI Systems Architect | AMTrix Solutions Inc. | 11 AI systems, multi-agent, copilots |
-| 2017–2022 | Technology Lead | AKM USA Trading Inc. | Trading operations + periodic AI/tech projects |
-| 2013–2017 | Lead Consultant | Malhotra Enterprise Solutions LLC | PNC, Synovus, Promontory (bank consulting) |
-| 2015 | Vice President | CopalAmba (Moody's) | Santander CCAR |
-| 2007–2013 | Assistant Director | Moody's Analytics | CRD, Basel II, client implementations |
-| 2005–2007 | Software Developer | Intelligent Search Technology | CRM, fuzzy matching AI |
+| April 2022–Present | Founder & Lead AI Systems Engineer | AMTrix Solutions Inc. (C-Corp) | Multi-provider LLM gateways, agent governance harness, private AI, FastMCP |
+| 2018–Present | Technology Lead & Systems Architect | AKM USA TRADING INC (C-Corp) | Trading operations, real-time data ingestion, conversational automation bots |
+| 2013–2017 | Lead Consultant / Database Architect | Malhotra Enterprise Solutions LLC | PNC wholesale PD models, Santander CCAR FR Y-14, Basel II |
+| 2015 | Vice President (CCAR Engagement) | Copal Amba (Moody's Analytics) | Santander CCAR RWA & FR Y-14 reporting pipeline |
+| 2007–2013 | Assistant Director / Lead Systems Consultant | Moody's Analytics | Flagship Credit Research Database (CRD) rebuild, default detection |
+| 2005–2007 | Software Developer | Intelligent Search Technology | NameSearch C/C++ fuzzy matching engine |
 
 ---
 

@@ -20,6 +20,9 @@ import tempfile
 import markdown
 
 CHROME_CANDIDATES = (
+    r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+    r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+    r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
     "google-chrome",
     "chromium",
@@ -136,7 +139,7 @@ def write_pdf(html, out):
     with tempfile.TemporaryDirectory() as profile:
         subprocess.run([chrome, "--headless=new", "--disable-gpu", "--no-first-run",
                         f"--user-data-dir={profile}", "--no-pdf-header-footer",
-                        f"--print-to-pdf={out}", html.resolve().as_uri()],
+                        f"--print-to-pdf={out.resolve()}", html.resolve().as_uri()],
                        check=True, capture_output=True)
     print("wrote", out)
 

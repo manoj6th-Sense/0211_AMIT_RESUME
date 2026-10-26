@@ -17,12 +17,11 @@
 
 ---
 
-## Your Genuine Weaknesses
+## Technical Landscape & Positioning Nuances
 
-- The **2017-2022 gap** is real — 5 years at ~4 months/year tech work
-- **No shipped products** with users/revenue yet — these are portfolio systems
-- **No formal ML credentials** to compete with PhDs on paper
-- **Recency:** 1.5-2 years of intense AI work vs. people with 5+ years
+- **Pre-GenAI Evolution (2018–2022)**: Built trading tech & conversational automation at AKM USA TRADING INC before transitioning full-time to modern GenAI runtime infrastructure at AMTrix Solutions Inc. in April 2022.
+- **Enterprise Adoption Focus**: Production AI architectures need to be positioned for enterprise teams solving reliability, cost, and vendor lock-in.
+- **Systems Engineering vs. Pure ML**: Differentiated as a hardcore systems/data engineer who builds reliable AI execution infrastructure, rather than an academic researcher.
 
 ---
 

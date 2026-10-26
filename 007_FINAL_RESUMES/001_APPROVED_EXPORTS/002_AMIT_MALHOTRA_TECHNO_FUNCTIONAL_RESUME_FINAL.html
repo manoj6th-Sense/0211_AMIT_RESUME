@@ -1,0 +1,122 @@
+<!doctype html><html><head><meta charset='utf-8'><style>
+@page { size: Letter; margin: 0.55in 0.6in; }
+body { font-family: Calibri, 'Helvetica Neue', Arial, sans-serif; font-size: 10.2pt; line-height: 1.28; color: #111; }
+h1 { font-size: 20pt; margin: 0 0 2pt 0; letter-spacing: 0.5px; }
+h2 { font-size: 11.5pt; margin: 9pt 0 3pt 0; border-bottom: 1.2px solid #333; padding-bottom: 1pt; text-transform: uppercase; letter-spacing: 0.4px; }
+h3 { font-size: 10.8pt; margin: 7pt 0 2pt 0; }
+p { margin: 2pt 0 4pt 0; }
+ul { margin: 1pt 0 3pt 0; padding-left: 15pt; }
+li { margin: 0 0 2.2pt 0; }
+table { border-collapse: collapse; width: 100%; font-size: 9.2pt; margin: 4pt 0; }
+th, td { border: 1px solid #999; padding: 2pt 4pt; vertical-align: top; text-align: left; }
+th { background: #eee; }
+code { font-family: Menlo, monospace; font-size: 9pt; }
+blockquote { margin: 3pt 0 3pt 10pt; color: #333; }
+</style></head><body><h1>AMIT MALHOTRA — Techno-Functional Engineering Profile</h1>
+<p><strong>Forward Deployed AI Engineer &amp; Lead Systems Architect</strong><br />
+<em>Agent Reliability · Multi-Provider LLM Gateways · Private AI Systems · Mission-Critical Data Engineering</em><br />
+Hicksville, NY 11801 | (917) 345-7516 | amit.malhotra1@gmail.com | github.com/amit-malhotra1</p>
+<hr />
+<h2>1. PROFESSIONAL OVERVIEW</h2>
+<p>Hardcore Systems and Data Engineer with 21+ years of experience developing, implementing, and deploying mission-critical software applications, enterprise database platforms, and production Generative AI infrastructure. </p>
+<p>A seasoned builder with dual strengths:
+1. <strong>Mission-Critical Enterprise Systems (15+ Years)</strong>: Architected, rewritten, and automated flagship database assets at Moody's Analytics, including the Credit Research Database (CRD), wholesale PD model execution platforms in T-SQL (PNC Bank), and CCAR stress testing regulatory reporting pipelines in PL/SQL (Santander Bank).
+2. <strong>Cutting-Edge Production AI Engineering (2022 – Present)</strong>: Architected multi-provider LLM gateways, streaming SSE tool-calling translators, autonomous agent reliability harnesses (~23K lines Python stdlib, 700+ tests), and private hardware inference nodes running 30B parameter models at 256K context.</p>
+<hr />
+<h2>2. CORE TECHNICAL STACK</h2>
+<table>
+<thead>
+<tr>
+<th>Domain</th>
+<th>Technologies &amp; Systems</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI Runtime &amp; Gateways</strong></td>
+<td>Model Context Protocol (FastMCP), Claude Code Hooks &amp; Tools, Multi-Provider Routing (Google Vertex AI, AWS Bedrock, OpenRouter, Ollama), Streaming SSE Translators, Prompt Caching, Token Diet Profiles, Private AI (GGUF 30B Models, Apple Silicon, Tailscale).</td>
+</tr>
+<tr>
+<td><strong>Languages &amp; Frameworks</strong></td>
+<td>Python (AsyncIO, stdlib, FastMCP, Pytest), Node.js / TypeScript (Express, Streaming SSE), C# / .NET, C/C++, Bash / Shell Scripting.</td>
+</tr>
+<tr>
+<td><strong>Databases &amp; Data Engineering</strong></td>
+<td>Microsoft SQL Server (T-SQL, Stored Procedures, Schema Redesign, Query Optimization), Oracle (PL/SQL), SQLite, PostgreSQL, SSIS ETL Pipelines, Data Warehousing, Index Optimization, Distributed Caching.</td>
+</tr>
+<tr>
+<td><strong>Systems &amp; Architecture</strong></td>
+<td>Docker, Linux, macOS/Apple Silicon Hardware Optimization, Caddy TLS, Git Pre-Commit Gates, Automated Test Harnesses, Event-Driven Daemons.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. PROFESSIONAL EXPERIENCE &amp; DELIVERED SYSTEMS</h2>
+<h3>AMTrix Solutions Inc. (C-Corp), Hicksville, NY</h3>
+<p><strong>Founder &amp; Lead AI Systems Engineer</strong> | April 2022 – Present</p>
+<p><em>Specialized technology solutions and product development firm architecting Generative AI runtime infrastructure, multi-provider LLM gateways, and autonomous agent reliability systems.</em></p>
+<h4>A. Multi-Provider LLM Gateway Architecture (Claude Code Center)</h4>
+<ul>
+<li><strong>Problem</strong>: Autonomous coding agents suffered from vendor lock-in, unmonitored token burn, and fragmented tool-calling responses when attempting to route traffic to alternative cloud providers.</li>
+<li><strong>Engineering Solution</strong>: Developed a self-hosted, high-throughput proxy in Node.js, Express, and SQLite that dynamically routes agent traffic explicitly across Google Vertex AI (Gemini native, Claude rawPredict, Model-as-a-Service third-party models), AWS Bedrock, OpenRouter, and local Ollama without silent fallbacks.</li>
+<li><strong>Streaming Tool Translation Engine</strong>: Engineered a streaming Server-Sent Events (SSE) accumulator that merges fragmented function-call chunks and reasoning signatures into uniform Anthropic tool blocks, enabling non-Anthropic models to reliably execute agentic tool loops.</li>
+<li><strong>Cost Controls &amp; Telemetry</strong>: Layered multi-tiered cost controls including 1-hour prompt-cache injection, keepalive daemons, Vertex explicit context caching, and SQLite exact-match response caching; built real-time HUD telemetry reporting tokens, cache hits, and cost per request.</li>
+</ul>
+<h4>B. Autonomous Agent Governance &amp; Reliability Harness (AMTrix Plan)</h4>
+<ul>
+<li><strong>Problem</strong>: Production coding agents frequently corrupt uncommitted files, lose context, drift from task scope, and mark work "done" without verification.</li>
+<li><strong>Engineering Solution</strong>: Architected a drop-in, zero-dependency governance framework (~23K lines of stdlib Python, 700+ automated unit tests) establishing numbered, read-only session ledgers, OS-level file write locks, and pre-tool execution hooks that prevent uncommitted data overwrites.</li>
+<li><strong>Measured Verification Gates</strong>: Implemented strict pre-commit gates blocking staged secrets and requiring automated test-suite execution before tasks can be marked complete by the agent.</li>
+<li><strong>Traceability Rules Ledger</strong>: Engineered an audit ledger mapping ~190 written operating rules to the concrete code modules that enforce each rule.</li>
+</ul>
+<h4>C. Private High-Context Inference Platform</h4>
+<ul>
+<li><strong>Engineering Solution</strong>: Deployed a zero-cloud private inference workstation on 64GB Apple Silicon running 30B parameter models (Qwen3, Llama 3.1) at 256K context using GGUF quantization, Ollama, Open WebUI, and SearxNG private search over Tailscale, reducing internal development inference costs to $0.</li>
+</ul>
+<h4>D. Model Context Protocol (FastMCP) Servers</h4>
+<ul>
+<li><strong>Engineering Solution</strong>: Shipped custom multi-model MCP servers (FastMCP, Python) with 10 tools optimizing IDE agent context windows through pass-by-path file loading, schema-bound JSON compression, reference-ID stores, and anti-truncation recovery loops.</li>
+</ul>
+<h4>E. Real-Time Event-Driven Platform</h4>
+<ul>
+<li><strong>Engineering Solution</strong>: Engineered a fault-tolerant multi-daemon event harvesting platform with lock-elected singleton architecture and PID-verified registries; ingested and analyzed 9.8M observations in SQL for inventory restock prediction.</li>
+</ul>
+<hr />
+<h3>AKM USA TRADING INC (C-Corp), Hicksville, NY</h3>
+<p><strong>Technology Lead &amp; Systems Architect</strong> | 2018 – Present</p>
+<p><em>Trading operations and technology development firm building automated data ingestion systems, algorithmic interfaces, and conversational workflow solutions.</em></p>
+<ul>
+<li><strong>Pre-GenAI Conversational Automation</strong>: Architected and deployed natural language conversational bots, voice/chat task automation bots, and multi-channel API orchestration pipelines for commercial trading workflows.</li>
+<li><strong>Algorithmic Execution &amp; Market Data Engines</strong>: Engineered real-time market data ingestion engines, automated signal processors, and order execution interfaces integrating with financial exchange APIs.</li>
+<li><strong>API Orchestration &amp; Backend Infrastructure</strong>: Developed customized Python and shell automation pipelines connecting disparate trading data feeds, alert systems, and transaction databases.</li>
+</ul>
+<hr />
+<h3>Malhotra Enterprise Solutions LLC, Hicksville, NY</h3>
+<p><strong>Principal Technology Consultant &amp; Database Architect</strong> | 2013 – 2017</p>
+<p><em>Enterprise technology consulting firm delivering financial database platforms, regulatory stress testing systems, and credit model implementations for major banks.</em></p>
+<ul>
+<li><strong>PNC Bank Wholesale PD Model Implementation</strong>: Architected standalone T-SQL calculation engines prototyping financial spreading, ratio calculation, and default probability outputs across 4 commercial portfolios; designed the Model Implementation Accuracy Testing platform in SQL Server.</li>
+<li><strong>Santander Bank CCAR Regulatory Reporting Pipeline (via Copal Amba / Moody's, 2015)</strong>: Served as Technical Manager / Vice President for CCAR implementation; developed PL/SQL extraction and transformation engines within Moody’s RiskFoundation Oracle data warehouse to automate Federal Reserve FR Y-14 (A/M/Q) stress testing submissions.</li>
+<li><strong>Automated Banking Model Testing Platforms</strong>: Architected automated model-accuracy test suites validating interim raw financial ratios, non-linear score transformations, and regulatory capital warning overrides across commercial banking clients.</li>
+<li><strong>Regulatory Reporting Integration</strong>: Managed Basel II and CCAR reporting data integration across a consortium of 30+ financial institutions, ensuring strict data governance and regulatory compliance.</li>
+</ul>
+<hr />
+<h3>Moody's Analytics, New York, NY</h3>
+<p><strong>Assistant Director / Lead Systems Consultant</strong> | Jul 2007 – Nov 2013</p>
+<p><em>Core database architect and systems engineer responsible for internal financial databases, regulatory modeling platforms, and client implementation engines.</em></p>
+<ul>
+<li><strong>Credit Research Database (CRD) Automation</strong>: Instrumental in redesigning, rewriting, and automating Moody's internal flagship Credit Research Database; developed high-performance T-SQL stored procedures and SSIS packages, eliminating manual operational bottlenecks and accelerating database processing throughput.</li>
+<li><strong>Default Detection Application</strong>: Engineered a client/server default detection platform in C#/.NET and SQL Server; integrated Moody’s proprietary RiskCalc EDF (Expected Default Frequency) scoring models with external financial data feeds (Compustat, WorldScope).</li>
+<li><strong>Enterprise Platform Implementations</strong>: Led database configuration, schema design, and backend integration of Moody's RiskAnalyst and RiskOrigin platforms across Tier-1 financial institutions.</li>
+<li><strong>Database Modernization</strong>: Led the backend database migration from SQL Server 2000 to SQL Server 2008 and developed backend data services for Moodys.com (Sybase and SQL Server).</li>
+</ul>
+<hr />
+<h3>Intelligent Search Technology, New York, NY</h3>
+<p><strong>Software Developer</strong> | Jun 2005 – Jul 2007</p>
+<ul>
+<li>Developed core algorithms for the NameSearch fuzzy matching search engine in C/C++; built SDK integration libraries for Oracle, SQL Server, and .NET.</li>
+</ul>
+<hr />
+<h2>4. EDUCATION</h2>
+<p><strong>Syracuse University</strong>, L.C. Smith College of Engineering and Computer Science<br />
+<strong>Bachelor of Science (B.S.) in Computer Science</strong>, Minor in Mathematics, 2005</p></body></html>

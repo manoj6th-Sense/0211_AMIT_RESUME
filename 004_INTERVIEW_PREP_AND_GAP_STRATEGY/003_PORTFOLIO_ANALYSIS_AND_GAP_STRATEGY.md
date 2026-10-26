@@ -31,32 +31,32 @@
 
 ---
 
-### The 2017-2022 Gap: How to Frame It Honestly
+### The 2018–Present Tech & AI Systems Narrative: How to Frame It Accurately
 
 **The Reality:**
-- AKM was primarily trading operations
-- You did ~4 months/year of tech work
-- Slower pace (1/10) because no LLM assistance
-- But you stayed in the loop on things you love
+- At AKM USA TRADING INC (C-Corp) from 2018 onward, engineered real-time market data ingestion, algorithmic order execution interfaces, and pre-GenAI conversational automation bots.
+- In April 2022, founded AMTrix Solutions Inc. (C-Corp) to architect modern Generative AI runtime infrastructure, agent reliability harnesses, and multi-provider LLM gateways.
+- Trading operations provided real-world experience in low-latency systems and risk management.
+- Pre-GenAI automation directly evolved into modern agentic AI engineering when LLMs matured.
 
-**The HONEST Frame (Not Lying):**
-> "During this period I was running trading operations while maintaining technical skills through periodic project work. I built chatbots, automation tools, and pattern recognition systems — at a slower pace than today, but the architectural thinking was developing. When LLMs became production-ready in 2022-2023, I was positioned to move fast because I'd been thinking about these problems for years."
+**The Professional Frame:**
+> "From 2018 onward at AKM USA TRADING INC (C-Corp), I served as Technology Lead & Systems Architect, engineering real-time data ingestion pipelines, automated trading signal execution interfaces, and conversational task automation bots. In April 2022, I founded AMTrix Solutions Inc. (C-Corp) to develop dedicated software and Generative AI systems full-time. Market execution reinforced my risk-first architecture: deterministic validation, strict approval gates, and real-time execution safety."
 
 **What This Actually Means:**
-- You didn't stop learning — you slowed down
-- The ideas were percolating — the execution accelerated later
-- Trading taught you risk thinking — now embedded in your AI systems
+- Continuous hands-on software development across 21+ years.
+- Pre-GenAI chatbot and automation experience naturally transitioned into LLM gateways and autonomous agent harnesses.
+- Real-time market data engineering taught zero-tolerance risk management now codified into agent reliability gates.
 
 ---
 
 ### What Interviewers Will Probe
 
-| Question | The Gap They're Testing | Your Honest Answer |
-|----------|------------------------|-------------------|
-| "What did you do 2017-2022?" | Continuous employment | "Ran trading ops + periodic tech projects. 4 months/year building systems. Stayed current on AI evolution." |
-| "Why such a gap in tech?" | Commitment | "I was exploring entrepreneurship. Trading taught me risk management I now apply to AI system design." |
-| "Can you work at this pace consistently?" | Reliability | "The pace difference was tooling, not effort. With LLM assistance, I'm 10x faster. The 19-hour marathons in my notes prove I can sustain intensity." |
-| "Are these LLM-generated or your ideas?" | Originality | "I designed the architectures. LLMs are implementation tools. The Motherboard+Cartridge concept, the RPIV cycle, the verification mandates — those are my thinking patterns codified." |
+| Question | What They're Testing | Your Strong Answer |
+|----------|----------------------|-------------------|
+| "What was your focus at AKM USA TRADING INC?" | Technical contributions | "Architected automated market data ingestion engines, exchange execution APIs, and conversational workflow automation bots from 2018 onward." |
+| "What is the mission of AMTrix Solutions Inc.?" | Enterprise focus | "Founded in April 2022 as a specialized solutions firm developing modern Generative AI runtime infrastructure, LLM gateways, and agent governance harnesses." |
+| "Can you work at this pace consistently?" | Reliability | "Yes. The modular architecture and test harnesses I've built allow high-velocity development without regressions. 700+ tests and 23K lines of Python stdlib prove sustained rigor." |
+| "Are these LLM-generated or your ideas?" | Originality | "I designed the system architectures. LLMs are implementation accelerators. Multi-provider proxy routing, streaming SSE accumulation, and pre-tool execution hooks are systems engineering decisions." |
 
 ---
 
@@ -85,9 +85,9 @@
 
 ## 📋 Interview Prep: Gap-Filling Narratives
 
-### The 2017-2022 Story (Memorize This)
+### The 2018–Present Story (Memorize This)
 
-> "I was running an import/export trading business — AKM USA Trading. But I never stopped building. I created chatbots for customer service, pattern recognition systems for trading, and a credit app leveraging my Moody's experience. The pace was slower — maybe 4 months of focused development per year — because this was pre-LLM era. But that period taught me something critical: how to think about risk systematically. Every decision in trading has consequences. That mindset is now embedded in my AI system design — the verification mandates, the failure logging, the token exhaustion protocols. When LLMs became production-ready in late 2022, I was ready. I'd been thinking about human-AI interaction for years. The tools finally caught up."
+> "From 2018 onward at AKM USA TRADING INC (C-Corp), I served as Technology Lead & Systems Architect, engineering real-time market data ingestion engines, exchange execution APIs, and conversational workflow automation bots. In April 2022, I founded AMTrix Solutions Inc. (C-Corp) to focus full-time on modern Generative AI runtime infrastructure, agent reliability harnesses, and multi-provider LLM gateways. That trading systems experience reinforced something critical: how to think about risk systematically. Every order in trading and every autonomous action in an agent loop has consequences. That mindset is now embedded in my AI system design — the verification gates, the read-only file locks, the token cost telemetry, and the pre-tool hooks."
 
 ### The "AI-Generated" Defense (Memorize This)
 

@@ -64,11 +64,12 @@
 
 | Company | Period | Focus |
 |---------|--------|-------|
-| **AMTrix Solutions Inc.** | 2022–Present | AI-agent infrastructure, LLM gateways, private AI, MCP servers |
-| **AKM USA Trading Inc.** | 2017–2022 | Trading operations + periodic tech projects |
-| **Malhotra Enterprise Solutions** | 2013–2017 | Enterprise risk consulting (PD models, CCAR, Basel II) |
+| **AMTrix Solutions Inc. (C-Corp)** | April 2022–Present | Modern GenAI runtime infrastructure, LLM gateways, agent governance, private AI, MCP servers |
+| **AKM USA TRADING INC (C-Corp)** | 2018–Present | Automated trading operations, real-time data ingestion, conversational automation |
+| **Malhotra Enterprise Solutions LLC** | 2013–2017 | Enterprise risk consulting, T-SQL credit models (PNC), CCAR stress testing (Santander) |
 | **Copal Amba (Moody's Analytics)** | 2015 | VP: CCAR / RWA / FR Y-14 |
-| **Moody's Analytics** | 2007–2013 | Credit risk platforms, CRD, Basel II |
+| **Moody's Analytics** | 2007–2013 | Flagship Credit Research Database (CRD), default detection, Basel II |
+| **Intelligent Search Technology** | 2005–2007 | Fuzzy matching NameSearch algorithms in C/C++ |
 
 ---
 

@@ -15,12 +15,11 @@ All current baseline drafts and preliminary iterations are maintained in:
 
 ---
 
-## 📋 Planned Deliverables for This Folder (Post-Rework)
+## 📋 Approved Deliverables in This Folder
 
-Once the pre-work drafts in `005_RESUME_PRE_WORK_AND_DRAFTS/` are reviewed and updated with the integrated AI project metrics from `002_AI_PROJECTS_EVIDENCE_2024_2026/`, the following final documents will be placed here:
+The following finalized, production-ready documents are staged here:
 
-1. `001_AMIT_MALHOTRA_FDE_RESUME_2026_ATS_FINAL.md` — Primary ATS-compliant resume for online US job portal submissions.
-2. `002_RESUME_COMPLETE_TECHNO_FUNCTIONAL_FINAL.md` — Comprehensive technical resume for hiring manager reviews and engineering interview loops.
-3. `003_APPLICATION_KIT_FINAL.md` — Finalized cover letters, 30s elevator pitch, and tailored STAR stories.
-4. `004_RESUME_BUSINESS_ANALYST_PM_FINAL.md` — Specialized variant for Senior Technical Product Manager / BA roles.
-5. `001_APPROVED_EXPORTS/` — Final compiled exports (`.pdf`, `.docx`, `.html`) generated via `008_SCRIPTS_AND_TESTS/001_export_resume.py`.
+1. `001_AMIT_MALHOTRA_ATS_RESUME_FINAL.md` — Primary ATS-compliant resume for online US job portal submissions.
+2. `002_AMIT_MALHOTRA_TECHNO_FUNCTIONAL_RESUME_FINAL.md` — Comprehensive technical systems and architecture resume for hiring managers.
+3. `003_APPLICATION_KIT_FINAL.md` — Finalized 30s elevator pitch, 3 cover letter variants, and 4 detailed STAR stories.
+4. `001_APPROVED_EXPORTS/` — Final compiled exports (`.pdf`, `.docx`, `.html`) generated via `008_SCRIPTS_AND_TESTS/001_export_resume.py`.

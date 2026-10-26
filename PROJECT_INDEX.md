@@ -85,10 +85,14 @@ This repository is organized as a sequential, step-by-step portfolio transformat
 │       └── 005_AMIT_MALHOTRA_FDE_RESUME_2026.pdf
 │
 ├── 006_LINKEDIN_PROFILE/                       ← STEP 6: Dedicated LinkedIn workspace
+│   ├── 001_LINKEDIN_PROFILE_FINAL.md           (⭐ Final approved LinkedIn profile)
 │   └── 001_LINKEDIN_PROFILE_WORKING_DRAFT.md
 │
-├── 007_FINAL_RESUMES/                          ← STEP 7: Destination for reworked, final resumes
+├── 007_FINAL_RESUMES/                          ← STEP 7: Final approved resumes & exports
 │   ├── 000_FINAL_RESUMES_STAGING_GUIDE.md
+│   ├── 001_AMIT_MALHOTRA_ATS_RESUME_FINAL.md   (⭐ Primary ATS resume for US applications)
+│   ├── 002_AMIT_MALHOTRA_TECHNO_FUNCTIONAL_RESUME_FINAL.md (⭐ Comprehensive technical architecture resume)
+│   ├── 003_APPLICATION_KIT_FINAL.md           (⭐ Pitch, cover letters & STAR stories)
 │   └── 001_APPROVED_EXPORTS/
 │
 ├── 008_SCRIPTS_AND_TESTS/                      ← Automation & QA verification
@@ -150,9 +154,12 @@ This repository is organized as a sequential, step-by-step portfolio transformat
 - [006_DRAFT_EXPORTS/](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/005_RESUME_PRE_WORK_AND_DRAFTS/006_DRAFT_EXPORTS)
 
 ### Step 6: LinkedIn Workspace
-- [001_LINKEDIN_PROFILE_WORKING_DRAFT.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/006_LINKEDIN_PROFILE/001_LINKEDIN_PROFILE_WORKING_DRAFT.md)
+- [001_LINKEDIN_PROFILE_FINAL.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/006_LINKEDIN_PROFILE/001_LINKEDIN_PROFILE_FINAL.md) — ⭐ Final approved LinkedIn profile copy (Headline, About, Experience).
+- [001_LINKEDIN_PROFILE_WORKING_DRAFT.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/006_LINKEDIN_PROFILE/001_LINKEDIN_PROFILE_WORKING_DRAFT.md) — Preliminary working draft.
 
-### Step 7: Final Resumes (Staging for Reworked Final Versions)
+### Step 7: Final Approved Resumes
+- [001_AMIT_MALHOTRA_ATS_RESUME_FINAL.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/007_FINAL_RESUMES/001_AMIT_MALHOTRA_ATS_RESUME_FINAL.md) — ⭐ Primary ATS resume for US job submissions.
+- [002_AMIT_MALHOTRA_TECHNO_FUNCTIONAL_RESUME_FINAL.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/007_FINAL_RESUMES/002_AMIT_MALHOTRA_TECHNO_FUNCTIONAL_RESUME_FINAL.md) — ⭐ Deep technical systems & architecture resume.
 - [000_FINAL_RESUMES_STAGING_GUIDE.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/007_FINAL_RESUMES/000_FINAL_RESUMES_STAGING_GUIDE.md)
 - [001_APPROVED_EXPORTS/](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/007_FINAL_RESUMES/001_APPROVED_EXPORTS)
 

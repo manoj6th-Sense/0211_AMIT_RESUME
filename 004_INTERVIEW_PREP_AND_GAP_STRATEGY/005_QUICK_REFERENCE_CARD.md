@@ -31,8 +31,8 @@
 
 ---
 
-## The 2017–2022 Story (30 Seconds)
-> "I ran an import/export trading business while doing periodic tech projects, about 4 months of focused development a year. I founded AMTrix Solutions in 2022, and since 2025 I have built LLM-agent systems full time. Trading taught me risk-first thinking, which is why my agents have a P0 risk override and approval gates before any spend."
+## The 2018–Present Tech & AI Systems Story (30 Seconds)
+> "From 2018 onward at AKM USA TRADING INC (C-Corp), I served as Technology Lead & Systems Architect, engineering real-time data ingestion pipelines, automated trading signal execution interfaces, and conversational task automation bots. In April 2022, I founded AMTrix Solutions Inc. (C-Corp) to develop dedicated software and Generative AI systems full-time. Trading operations and market execution reinforced my risk-first architecture: deterministic validation, strict approval gates, and real-time execution safety."
 
 ---
 
