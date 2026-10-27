@@ -31,6 +31,9 @@ This repository is organized as a sequential, step-by-step portfolio transformat
                 │
                 ▼
 [007: Final Approved Resumes & Exports]   ◄─── (Final polished versions for job submissions)
+                │
+                ▼
+[009: Deep Research & Transformation]     ◄─── (⭐ Enhanced CV, LinkedIn, Skills Roadmap & Interview Master Plan)
 ```
 
 ---
@@ -101,6 +104,15 @@ This repository is organized as a sequential, step-by-step portfolio transformat
 │   ├── 003_banned_phrases.txt
 │   └── 004_check_outward.sh
 │
+├── 009_DEEP_RESEARCH_AND_CAREER_TRANSFORMATION/ ← STEP 9: ⭐ Complete Deep Research Deliverables Suite
+│   ├── 000_FOLDER_INDEX.md
+│   ├── 001_DEEP_RESEARCH_SYNTHESIS_AND_MARKET_POSITIONING.md
+│   ├── 002_AMIT_MALHOTRA_ENHANCED_ATS_CV.md
+│   ├── 003_AMIT_MALHOTRA_ENHANCED_TECHNO_FUNCTIONAL_CV.md
+│   ├── 004_AMIT_MALHOTRA_ENHANCED_LINKEDIN_PROFILE.md
+│   ├── 005_SKILLS_ENHANCEMENT_AND_CAPABILITY_ROADMAP.md
+│   └── 006_COMPREHENSIVE_INTERVIEW_PREPARATION_MASTER_PLAN.md
+│
 ├── _ARCHIVE/                                   ← Pristine clone snapshot
 │   └── GITHUB_CLONE_SNAPSHOT/
 │
@@ -168,3 +180,13 @@ This repository is organized as a sequential, step-by-step portfolio transformat
 - [002_preview_share.sh](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/008_SCRIPTS_AND_TESTS/002_preview_share.sh)
 - [003_banned_phrases.txt](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/008_SCRIPTS_AND_TESTS/003_banned_phrases.txt)
 - [004_check_outward.sh](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/008_SCRIPTS_AND_TESTS/004_check_outward.sh)
+
+### Step 9: ⭐ Deep Research & Career Transformation Suite
+- [000_FOLDER_INDEX.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/009_DEEP_RESEARCH_AND_CAREER_TRANSFORMATION/000_FOLDER_INDEX.md) — Complete deliverable catalog and executive roadmap.
+- [001_DEEP_RESEARCH_SYNTHESIS_AND_MARKET_POSITIONING.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/009_DEEP_RESEARCH_AND_CAREER_TRANSFORMATION/001_DEEP_RESEARCH_SYNTHESIS_AND_MARKET_POSITIONING.md) — 2026 Enterprise AI landscape, FDE market requirements, 6 pillars & defensible moat.
+- [002_AMIT_MALHOTRA_ENHANCED_ATS_CV.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/009_DEEP_RESEARCH_AND_CAREER_TRANSFORMATION/002_AMIT_MALHOTRA_ENHANCED_ATS_CV.md) — ⭐ Primary ATS-optimized CV for US applications.
+- [003_AMIT_MALHOTRA_ENHANCED_TECHNO_FUNCTIONAL_CV.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/009_DEEP_RESEARCH_AND_CAREER_TRANSFORMATION/003_AMIT_MALHOTRA_ENHANCED_TECHNO_FUNCTIONAL_CV.md) — ⭐ Comprehensive systems architecture & technical dossier.
+- [004_AMIT_MALHOTRA_ENHANCED_LINKEDIN_PROFILE.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/009_DEEP_RESEARCH_AND_CAREER_TRANSFORMATION/004_AMIT_MALHOTRA_ENHANCED_LINKEDIN_PROFILE.md) — ⭐ Optimized LinkedIn workspace with headline, about, experience, and 50 search skills.
+- [005_SKILLS_ENHANCEMENT_AND_CAPABILITY_ROADMAP.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/009_DEEP_RESEARCH_AND_CAREER_TRANSFORMATION/005_SKILLS_ENHANCEMENT_AND_CAPABILITY_ROADMAP.md) — Actionable 30-60-90 day technical skills elevation plan.
+- [006_COMPREHENSIVE_INTERVIEW_PREPARATION_MASTER_PLAN.md](file:///c:/AI_PROJECTS/04_6TH_SENSE_PRODUCT_DEVELOPMENT/0211_AMIT_RESUME/009_DEEP_RESEARCH_AND_CAREER_TRANSFORMATION/006_COMPREHENSIVE_INTERVIEW_PREPARATION_MASTER_PLAN.md) — 5-stage interview guide, 4 system designs, live debugging, pushback handling, and 6 STAR stories.
+

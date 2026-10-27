@@ -1,0 +1,13 @@
+{
+  "run_id": "OR-DR-20261027-020520",
+  "started_at": "2026-10-27T02:05:20.058115Z",
+  "target": "Amit Malhotra Career Transformation Portfolio",
+  "models": {
+    "phase_1_planning": "deepseek/deepseek-v4.1-flash-1017",
+    "phase_2_extraction": "inclusionai/ling-3.1-flash",
+    "phase_3_analysis": "deepseek/deepseek-v4.1-flash-1017",
+    "phase_4_drafting": "z-ai/glm-5.3-flash",
+    "phase_5_validation": "deepseek/deepseek-v4.1-flash-1017",
+    "phase_6_review": "openai/gpt-6-astra"
+  }
+}

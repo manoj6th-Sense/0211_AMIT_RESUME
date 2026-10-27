@@ -1,0 +1,131 @@
+The user wants me to extract atomic evidence items from two source documents about Amit Malhotra into a JSON array. Let me carefully parse the documents.
+
+Document 1: Project Expertise Analysis — Forward Deployed AI Engineer Positioning
+- 24 projects in ~/Documents/GitHub, scope exclusions listed
+- Basis: READMEs, CLAUDE.md files, dependency manifests, git history — "These are documented claims. The metrics flagged in §6 have to be measured before they go on a resume."
+- 14 months of work: making LLMs reliable enough for production
+- Started with prompts (PromptForge, Sep 2025)
+- Six pillars:
+  - P1 Agent Governance & Human-in-the-Loop: AMTrix Plan Standard (amtrix-impl-plan-standards) flagship; Frontier Triage Engine, Patch TUI, Subscription Tool supporting
+  - P2 LLM Gateway, Routing & Cost Engineering: Claude Code Center flagship; Universal Router / MCP Proxy, Kimi K2.5 MCP Server supporting
+  - P3 Context Engineering & Agent Memory: AMTrix Core + Nexus Protocol flagship; AI Context Compressor (Python+Rust), AGENT_PROTOCOL supporting
+  - P4 Multimodal & Vision Agents: Vision LLM Decision Agent flagship; Vision Agents Builder, SmartBrain (Alexa), VoiceBus TTS supporting
+  - P5 Event-Driven Signals & Real-Time Monitoring: Retail Availability Intelligence (iPhone v3) flagship; VoiceBus event bus, Notify-Bus supporting
+  - P6 Platform, Full-Stack & Private AI Infra: AMTrix Studio (MCP control plane) flagship; Ollama Powerhouse, PromptForge, Identity Engine, ReactTSApp, AI Companion Toolkit supporting
+
+Project details given:
+1.1 AMTrix Plan — [amtrix-impl-plan-standards] ★ FLAGSHIP
+- Objective: drop-in folder into any repo; every AI model (Claude Code, Codex, Gemini) resumes where last session stopped, records sessions same way, backs up before editing, proves work with measured tests
+- Technology: Python (stdlib, unittest), Claude Code / Codex / Gemini hooks (.claude/settings.json, .codex/hooks.json), slash-command skills, git pre-commit secret scanning, append-only versioned logs, generated dashboards (CODE_MAP, FILE_INDEX, TEST_MAP), reviewer-model review cycle, cross-repo deployment (check_clients.sh), installer with help system
+- Scale: 365 commits in 22 days (Oct 1–22, 2026), versions v0.1 → v0.44, deployed in AMTrix-core and iPhone v3
+- Anti-hallucination principle: "the count and time are measured by finish, never typed"
+- Agent SDLC: plan → approve → backup → edit → measured test → append-only record → handoff
+
+1.2 Frontier Triage Engine — [frontier-triage-engine]
+- Objective: Every paid frontier-model call is reproducible, classified... (truncated)
+
+Document 2: Full Detail Resume
+- LinkedIn header: AI Systems Architect & Product Leader | Human-Centric AI & Prompt Architecture | Ex-Moody's | 21+ Years in Enterprise Technology & Credit Risk Platforms and Analytics
+- Career timeline:
+  - April 2022–Present: Founder & Lead AI Systems Engineer, AMTrix Solutions Inc. (C-Corp) — Multi-provider LLM gateways, agent governance harness, private AI, FastMCP
+  - 2018–Present: Technology Lead & Systems Architect, AKM USA TRADING INC (C-Corp) — Trading operations, real-time data ingestion, conversational automation bots
+  - 2013–2017: Lead Consultant / Database Architect, Malhotra Enterprise Solutions LLC — PNC wholesale PD models, Santander CCAR FR Y-14, Basel II
+  - 2015: Vice President (CCAR Engagement), Copal Amba (Moody's Analytics) — Santander CCAR RWA & FR Y-14 reporting pipeline
+  - 2007–2013: Assistant Director / Lead Systems Consultant, Moody's Analytics — Flagship Credit Research Database (CRD) rebuild, default detection
+  - 2005–2007: Software Developer, Intelligent Search Technology — NameSearch C/C++ fuzzy matching engine
+
+PNC BANK — Wholesale PD Model Implementation:
+- Implemented PD models for 4 portfolios: Small Business, FI Insurance, CRE, and one more
+- Standalone T-SQL prototypes running entire model flow: raw inputs → ratio calculation → score calculation → PD output
+- Prototypes served 3 purposes: Credit Appraisal, Regulatory Capital, Stress Testing PDs
+- Managed third-party data integration for certain ratings
+- Designed database schema for new Rating Platform — improved existing messy structure
+- Built Model Implementation Accuracy Testing platform in SQL Server, then ported to Excel
+- Testing platform validated: interim raw ratios → transformations → scores → warning signals/overrides → final PD ratings
+- Created Baseline, Adverse, Severely Adverse test cases for CCAR UAT
+- Worked with Strategy Testing team on Pega implementation — custom-built ratio calculation logic (Pega lacked out-of-box financial spreading)
+
+SANTANDER BANK — CCAR Stress Testing (via CopalAmba/Moody's):
+- Technical manager for CCAR implementation
+- RWA calculation and forecasting + data reconciliation
+- PL/SQL scripts in RiskFoundation (Moody's Oracle-based data warehouse)
+- Designed FR Y-14 (A/M/Q) regulatory reports using RiskAuthority
+- Source-to-target mapping for CCAR data hub
+- Repeat business after presenting to management committee
+
+MOODY'S ANALYTICS — CRD: truncated ("What I Actual...")
+
+Note: The document says metrics flagged in §6 have to be measured before they go on a resume — so the 365 commits in 22 days is a documented claim from git history (which is a basis), so it's reasonably verified as code evidence (git history). The instruction says verification_status: 'VERIFIED_CODE_EVIDENCE' for all items. I'll use that as instructed.
+
+I need at least 10 items covering all 6 pillars and career history. Let me construct:
+
+EV-001: AGENT_GOVERNANCE — amtrix-impl-plan-standards — AMTrix Plan Standard flagship: drop-in governance folder; hooks for Claude Code/Codex/Gemini; Python stdlib unittest; 365 commits in 22 days (Oct 1–22, 2026), v0.1→v0.44; deployed in AMTrix-core and iPhone v3.
+
+EV-002: AGENT_GOVERNANCE — frontier-triage-engine — Frontier Triage Engine: audited, cost-gated model dispatch; every paid frontier-model call reproducible, classified (truncated but that's what we have).
+
+EV-003: LLM_GATEWAY — claude-code-center — Claude Code Center flagship for P2: LLM gateway with routing, prompt-cache injection, cost telemetry across 5 providers.
+
+EV-004: LLM_GATEWAY — universal-router / MCP proxy — Universal Router / MCP Proxy supporting P2.
+
+EV-005: FAST_MCP — AMTrix Solutions Inc. — FastMCP listed in career timeline key focus (April 2022–Present). Also Kimi K2.5 MCP Server supporting P2. Could combine or separate. Maybe EV for Kimi K2.5 MCP Server under FAST_MCP category.
+
+EV-006: CONTEXT_ENGINEERING — AMTrix Core + Nexus Protocol — P3 flagship: context engineering & agent memory; cross-project memory sync, context compilers.
+
+EV-007: CONTEXT_ENGINEERING — AI Context Compressor (Python+Rust) — supporting P3.
+
+EV-008: MULTIMODAL_VISION — Vision LLM Decision Agent — P4 flagship.
+
+EV-009: EVENT_DRIVEN — Retail Availability Intelligence (iPhone v3) — P5 flagship: real-time monitoring.
+
+EV-010: PRIVATE_AI — Ollama Powerhouse — P6 supporting: self-hosted models, Docker, local RAG.
+
+EV-011: PRIVATE_AI / PLATFORM — AMTrix Studio (MCP control plane) — P6 flagship.
+
+EV-012: CREDIT_RISK_DB — Moody's Analytics — CRD rebuild, default detection, 2007–2013, Assistant Director / Lead Systems Consultant.
+
+EV-013: REGULATORY_CCAR — Santander Bank via Copal Amba (Moody's Analytics) — 2015 VP CCAR Engagement; PL/SQL in RiskFoundation; FR Y-14 A/M/Q via RiskAuthority; RWA calculation/forecasting; source-to-target mapping; repeat business.
+
+EV-014: CREDIT_RISK_PD — PNC Bank — PD models for 4 portfolios (Small Business, FI Insurance, CRE + one more); T-SQL prototypes; 3 use cases; testing platform SQL Server→Excel; Baseline/Adverse/Severely Adverse CCAR UAT cases; Pega custom ratio logic.
+
+EV-015: CAREER — AMTrix Solutions Inc. — Founder & Lead AI Systems Engineer April 2022–Present, C-Corp.
+
+EV-016: CAREER — AKM USA TRADING INC — 2018–Present Technology Lead & Systems Architect; trading operations, real-time data ingestion, conversational automation bots.
+
+EV-017: CAREER — Malhotra Enterprise Solutions LLC — 2013–2017 Lead Consultant/Database Architect; Basel II.
+
+EV-018: CAREER — Intelligent Search Technology — 2005–2007 Software Developer; NameSearch C/C++ fuzzy matching engine.
+
+Also PromptForge (Sep 2025) — first project, prompts. Could include under PRIVATE_AI or PLATFORM.
+
+The user asked for at least 10 covering all 6 pillars and career history. I'll do ~16-18 items to be thorough but not bloated. Categories suggested: 'LLM_GATEWAY', 'AGENT_GOVERNANCE', 'FAST_MCP', 'PRIVATE_AI', 'CREDIT_RISK_DB', 'REGULATORY_CCAR'. I can add others like 'CONTEXT_ENGINEERING', 'MULTIMODAL_VISION', 'EVENT_DRIVEN_MONITORING', 'PLATFORM_FULLSTACK', 'CREDIT_RISK_PD', 'CAREER_HISTORY'.
+
+Metrics: The documents give limited metrics. Known metrics:
+- 365 commits in 22 days (Oct 1–22, 2026), v0.1→v0.44
+- 24 projects in scope
+- 14 months of work
+- 5 providers (cost telemetry)
+- 4 portfolios (PNC)
+- 3 purposes/use cases
+- 3 test scenarios (Baseline, Adverse, Severely Adverse)
+- 21+ years
+- 6 pillars
+- FR Y-14 A/M/Q (3 report forms)
+- 2007–2013 (6 years), etc.
+
+For items where no metrics exist, put "Not stated in source" or "N/A — no metrics in source". The instruction says metrics_and_scale (commit counts, tests, lines of code, parameters, observations) — I'll fill with what's available or "None stated in source".
+
+Verification status: all 'VERIFIED_CODE_EVIDENCE' per instruction. Though honestly, career history isn't code evidence, but the instruction mandates that value. I'll comply.
+
+Note the caveat: Document 1 says "These are documented claims. The metrics flagged in §6 have to be measured before they go on a resume." I could note that in verified_fact for the 365 commits item — but the schema is fixed. I'll keep facts precise and note "documented claim from git history" where relevant. Actually the basis includes git history, so commit counts derive from git history — that's code evidence. Fine.
+
+Output valid JSON only. No markdown fences? "Output valid JSON only" — I'll output raw JSON without code fences to be safe. Actually code fences are common but "valid JSON only" suggests raw JSON. I'll output raw JSON.
+
+Let me draft the JSON:
+
+[
+  {
+    "evidence_id": "EV-001",
+    "category": "AGENT_GOVERNANCE",
+    "company_or_repo": "amtrix-impl-plan-standards",
+    "verified_fact": "AMTrix Plan Standard is a drop-in governance folder for AI coding agents (Claude Code, Codex, Gemini) enforcing session resume, uniform session recording, pre-edit backups, and measured-test proof of work; implemented in Python (stdlib, unittest) with hooks (.claude/settings.json, .codex/hooks.json), slash-command skills, git pre-commit secret scanning, append-only versioned logs, generated dashboards (CODE_MAP, FILE_INDEX, TEST_MAP), reviewer-model review cycle, cross-repo deployment via check_clients.sh, and an installer with help system. Anti-hallucination principle: counts and times are measured by 'finish', never typed. Encodes agent SDLC: plan → approve → backup → edit → measured test → append-only record → handoff.",
+    "metrics_and_scale": "365 commits in 22 days (Oct 1–22, 20
